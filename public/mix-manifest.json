@@ -3,6 +3,7 @@
     "/css/all.min.css": "/css/all.min.css",
     "/js/bootstrap.min.js": "/js/bootstrap.min.js",
     "/js/custom.js": "/js/custom.js",
+    "/js/gmaps.js": "/js/gmaps.js",
     "/js/isotope.pkgd.min.js": "/js/isotope.pkgd.min.js",
     "/js/jquery-3.2.1.min.js": "/js/jquery-3.2.1.min.js",
     "/js/jquery-migrate-3.0.0.min.js": "/js/jquery-migrate-3.0.0.min.js",

@@ -81,9 +81,12 @@ var PATH = {};
     PATH.HeaderFixed = function () {
         var varHeaderFix = $(window).scrollTop() >= 60,
             $navbar = $(".navbar");
+        var $buttonHotline = $("#button-hotline");
         if (varHeaderFix) {
             $navbar.addClass("fixed-header");
+            $buttonHotline.show();
         } else {
+            $buttonHotline.hide();
             $navbar.removeClass("fixed-header");
         }
     };

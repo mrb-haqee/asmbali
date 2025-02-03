@@ -1,1 +1,1 @@
-@include('layout.master')
+@include('page.home.home')
