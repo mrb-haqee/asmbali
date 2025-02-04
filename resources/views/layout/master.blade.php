@@ -62,6 +62,10 @@
     <script src="{{ asset('js/swiper.min.js') }}"></script>
     <!-- Custom -->
     <script src="{{ asset('js/custom.js') }}"></script>
+    <!--end::Custom Javascript-->
+    @stack('style')
+    <!--end::Javascript-->
+
     <script>
         var map;
 
@@ -88,6 +92,10 @@
     </script>
     <script src="https://cdn.jsdelivr.net/gh/somanchiu/Keyless-Google-Maps-API@v6.8/mapsJavaScriptAPI.js" async defer>
     </script>
+    <!--end::Custom Javascript-->
+    @stack('scripts')
+    <!--end::Javascript-->
+
     <!-- =========================================================
   STYLE SWITCHER | ONLY FOR DEMO NOT INCLUDED IN MAIN FILES
  ============================================================== -->

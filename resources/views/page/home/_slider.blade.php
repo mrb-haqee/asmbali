@@ -5,7 +5,7 @@
             <div class="container">
                 <div class="row full-height align-items-center text-center">
                     <div class="col p-100px-t p-50px-b slider-text">
-                        <div class="d-flex justify-content-center align-content-center mb-3">
+                        <div class="d-flex justify-content-center align-content-center mb-3 fade-in">
                             <img src="{{ asset('img/logos/logo-asm.png') }}" style="width: 150px" alt="logo asm">
                         </div>
                         <h4 class="tlt1">{{ $data['title'] }}</h4>

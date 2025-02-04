@@ -46,10 +46,10 @@
         <section id="about" class="p-80px-tb bg-light">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-sm-12 col-xs-12 align-self-center">
+                    <div class="col-md-6 col-sm-12 col-xs-12 align-self-center" data-aos="fade-up">
                         <img class="img-responsive" src="img/about-us.jpg" alt="Helping hands">
                     </div>
-                    <div class="col-md-6 col-sm-12 col-xs-12 align-self-center">
+                    <div class="col-md-6 col-sm-12 col-xs-12 align-self-center" data-aos="fade-down">
                         <div class="about-box diffuse-shadow p-45px sm-p-25px bg-white">
                             <h2>About us</h2>
                             <div class="divider-dashed m-25px-b"></div>
@@ -75,6 +75,7 @@
             </div>
         </section>
         <!-- ========== About End ========== -->
+
         <!-- Video Section Start -->
         <section class="p-100px-tb overlay overlay-6 parallax" style="background-image:url(img/bg/video-promo.jpg)">
             <div class="container">
@@ -92,6 +93,7 @@
             </div>
         </section>
         <!-- Video Section End -->
+
         <!-- ========== Causes Start ========== -->
         <section id="causes" class="p-80px-tb bg-white">
             <div class="container">
@@ -175,6 +177,7 @@
             </div>
         </section>
         <!-- ========== Causes End ========== -->
+
         <!-- ========== Help process Start ========== -->
         <section id="HelpProcess" class="p-80px-tb bg-light">
             <div class="container">
@@ -241,6 +244,7 @@
             </div>
         </section>
         <!-- ========== Help process End ========== -->
+
         <!-- Make a donation Start-->
         <section id="donate" class="parallax overlay overlay-5" style="background-image:url(img/bg/helping-hands.jpg);">
             <div class="container">
@@ -289,6 +293,7 @@
             </div>
         </section>
         <!-- Make a donation End-->
+
         <!-- Our gallery Start-->
         <section id="gallery" class="p-80px-tb">
             <div class="container">
@@ -1044,4 +1049,15 @@
         </section>
         <!-- End contact section -->
     @endsection
+  
+    @push('style')
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    @endpush
+
+    @push('scripts')
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    @endpush
 </x-default-layout>
