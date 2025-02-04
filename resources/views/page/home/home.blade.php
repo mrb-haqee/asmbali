@@ -1,4 +1,8 @@
 <x-default-layout>
+    @section('title')
+        ASM BALI
+    @endsection
+
     @section('content')
         <!-- ========== Slider Start ========== -->
         <section id="home">
@@ -8,19 +12,19 @@
                     @php
                         $data = [
                             [
-                                'bg' => 'img/hero/women.jpg',
-                                'title' => 'ASM Bali Untuk Kemaslahatan Ummat',
-                                'detail' => 'We give a helping hand for homeless peoples',
-                            ],
-                            [
                                 'bg' => 'img/hero/homeless.jpg',
-                                'title' => 'ASM Bali Untuk Kemaslahatan Ummat',
-                                'detail' => 'We give a helping hand for homeless peoples',
+                                'title' => 'Ajang Silaturahmi Muslim Bali',
+                                'detail' => 'Berbuat untuk Kemaslahatan Ummat',
                             ],
                             [
-                                'bg' => 'img/hero/relefe.jpg',
-                                'title' => 'ASM Bali Untuk Kemaslahatan Ummat',
-                                'detail' => 'We give a helping hand for homeless peoples',
+                                'bg' => 'img/hero/camping.jpg',
+                                'title' => 'Ajang Silaturahmi Muslim Bali',
+                                'detail' => 'Berbuat untuk Kemaslahatan Ummat',
+                            ],
+                            [
+                                'bg' => 'img/hero/kurban.jpg',
+                                'title' => 'Ajang Silaturahmi Muslim Bali',
+                                'detail' => 'Berbuat untuk Kemaslahatan Ummat',
                             ],
                         ];
                     @endphp
@@ -104,202 +108,64 @@
                 <div class="row">
                     <div class="swiper-container causes-swiper p-60px-b">
                         <div class="swiper-wrapper">
-                            <!-- Single causes item start -->
-                            <div class="swiper-slide">
-                                <div class="col">
-                                    <article class="content-box diffuse-shadow bg-light p-10px">
-                                        <div class="btn-relative-img text-center overlay overlay-5">
-                                            <img src="img/causes/1.jpg" alt="">
-                                            <div class="lightbox-icons">
-                                                {{-- <a href="img/causes/1.jpg" class="causes-lightbox"
-                                                    title="Donate for victims">
-                                                    <i class="icofont-image"></i>
-                                                </a> --}}
-                                                <button class="js-modal-btn" data-video-id="QIYcFth8ty4">
-                                                    <i class="icofont-video-alt"></i>
-                                                </button>
-                                                <a href="causes-detail.html">
-                                                    <i class="icofont-external-link"></i>
-                                                </a>
-                                            </div>
-                                            <a href="donate.html" class="btn btn-default btn-small">Donate</a>
-                                        </div>
-                                        <div class="content-area mt-2 p-10px">
-                                            <h3><a href="donate.html">Donate for helpless</a></h3>
-                                            <p>Much evil soon high in hope do view. Out may few northward.</p>
-                                        </div>
-                                        <div class="progress-bars m-35px-b m-10px-t p-10px-l p-10px-r">
-                                            <div class="progress">
-                                                <div class="progress-bar" data-value="30" style="width: 30%;">
-                                                    <span>30%</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <footer class="content-footer p-10px-l p-10px-r">
-                                            <p class="content-raised">
-                                                Raised:<br><b>$1,299</b>
-                                            </p>
-                                            <p class="content-goal">
-                                                Goal:<br><b>$12,000</b>
-                                            </p>
-                                            <p class="content-raised">
-                                                Donors:<br><b>14 Donors</b>
-                                            </p>
-                                            <p class="content-goal">
-                                                Time left:<br><b>222 days</b>
-                                            </p>
-                                        </footer>
-                                    </article>
-                                </div>
-                            </div>
-                            <!-- Single causes item end -->
-                            <!-- Single causes item start -->
-                            <div class="swiper-slide">
-                                <div class="col">
-                                    <article class="content-box diffuse-shadow bg-light p-10px">
-                                        <div class="btn-relative-img text-center overlay overlay-5">
-                                            <img src="img/causes/2.jpg" alt="">
-                                            <div class="lightbox-icons">
-                                                <a href="img/causes/2.jpg" class="causes-lightbox"
-                                                    title="Donate for victims">
-                                                    <i class="icofont-image"></i>
-                                                </a>
-                                                <button class="js-modal-btn" data-video-id="QIYcFth8ty4">
-                                                    <i class="icofont-video-alt"></i>
-                                                </button>
-                                                <a href="causes-detail.html">
-                                                    <i class="icofont-external-link"></i>
-                                                </a>
-                                            </div>
-                                            <a href="donate.html" class="btn btn-default btn-small">Donate</a>
-                                        </div>
-                                        <div class="content-area mt-2 p-10px">
-                                            <h3><a href="donate.html">Donate for education</a></h3>
-                                            <p>Much evil soon high in hope do view. Out may few northward.</p>
-                                        </div>
-                                        <div class="progress-bars m-35px-b m-10px-t p-10px-l p-10px-r">
-                                            <div class="progress">
-                                                <div class="progress-bar" data-value="30" style="width: 30%;">
-                                                    <span>30%</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <footer class="content-footer p-10px-l p-10px-r">
-                                            <p class="content-raised">
-                                                Raised:<br><b>$1,299</b>
-                                            </p>
-                                            <p class="content-goal">
-                                                Goal:<br><b>$12,000</b>
-                                            </p>
-                                            <p class="content-raised">
-                                                Donors:<br><b>14 Donors</b>
-                                            </p>
-                                            <p class="content-goal">
-                                                Time left:<br><b>222 days</b>
-                                            </p>
-                                        </footer>
-                                    </article>
-                                </div>
-                            </div>
-                            <!-- Single causes item end -->
-                            <!-- Single causes item start -->
-                            <div class="swiper-slide">
-                                <div class="col">
-                                    <article class="content-box diffuse-shadow bg-light p-10px">
-                                        <div class="btn-relative-img text-center overlay overlay-5">
-                                            <img src="img/causes/3.jpg" alt="">
-                                            <div class="lightbox-icons">
-                                                <a href="img/causes/3.jpg" class="causes-lightbox"
-                                                    title="Donate for victims">
-                                                    <i class="icofont-image"></i>
-                                                </a>
-                                                <button class="js-modal-btn" data-video-id="QIYcFth8ty4">
-                                                    <i class="icofont-video-alt"></i>
-                                                </button>
-                                                <a href="causes-detail.html">
-                                                    <i class="icofont-external-link"></i>
-                                                </a>
-                                            </div>
-                                            <a href="donate.html" class="btn btn-default btn-small">Donate</a>
-                                        </div>
-                                        <div class="content-area mt-2 p-10px">
-                                            <h3><a href="donate.html">Donate for hope</a></h3>
-                                            <p>Much evil soon high in hope do view. Out may few northward.</p>
-                                        </div>
-                                        <div class="progress-bars m-35px-b m-10px-t p-10px-l p-10px-r">
-                                            <div class="progress">
-                                                <div class="progress-bar" data-value="90" style="width: 90%;">
-                                                    <span>90%</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <footer class="content-footer p-10px-l p-10px-r">
-                                            <p class="content-raised">
-                                                Raised:<br><b>$1,299</b>
-                                            </p>
-                                            <p class="content-goal">
-                                                Goal:<br><b>$12,000</b>
-                                            </p>
-                                            <p class="content-raised">
-                                                Donors:<br><b>14 Donors</b>
-                                            </p>
-                                            <p class="content-goal">
-                                                Time left:<br><b>222 days</b>
-                                            </p>
-                                        </footer>
-                                    </article>
-                                </div>
-                            </div>
-                            <!-- Single causes item end -->
-                            <!-- Single causes item start -->
-                            <div class="swiper-slide">
-                                <div class="col">
-                                    <article class="content-box diffuse-shadow bg-light p-10px">
-                                        <div class="btn-relative-img text-center overlay overlay-5">
-                                            <img src="img/causes/4.jpg" alt="">
-                                            <div class="lightbox-icons">
-                                                <a href="img/causes/4.jpg" class="causes-lightbox"
-                                                    title="Donate for victims">
-                                                    <i class="icofont-image"></i>
-                                                </a>
-                                                <button class="js-modal-btn" data-video-id="QIYcFth8ty4">
-                                                    <i class="icofont-video-alt"></i>
-                                                </button>
-                                                <a href="causes-detail.html">
-                                                    <i class="icofont-external-link"></i>
-                                                </a>
-                                            </div>
-                                            <a href="donate.html" class="btn btn-default btn-small">Donate</a>
-                                        </div>
-                                        <div class="content-area mt-2 p-10px">
-                                            <h3><a href="#">Donate for education</a></h3>
-                                            <p>Much evil soon high in hope do view. Out may few northward.</p>
-                                        </div>
-                                        <div class="progress-bars m-35px-b m-10px-t p-10px-l p-10px-r">
-                                            <div class="progress">
-                                                <div class="progress-bar" data-value="45" style="width: 45%;">
-                                                    <span>45%</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <footer class="content-footer p-10px-l p-10px-r">
-                                            <p class="content-raised">
-                                                Raised:<br><b>$1,299</b>
-                                            </p>
-                                            <p class="content-goal">
-                                                Goal:<br><b>$12,000</b>
-                                            </p>
-                                            <p class="content-raised">
-                                                Donors:<br><b>14 Donors</b>
-                                            </p>
-                                            <p class="content-goal">
-                                                Time left:<br><b>222 days</b>
-                                            </p>
-                                        </footer>
-                                    </article>
-                                </div>
-                            </div>
-                            <!-- Single causes item end -->
+                            @php
+                                $data = [
+                                    [
+                                        'bg' => 'img/causes/1.jpg',
+                                        'videoId' => 'QIYcFth8ty4',
+                                        'linkBlog' => 'donate.html',
+                                        'progres' => 30,
+                                        'raised' => 1.299,
+                                        'goals' => 12.0,
+                                        'donated' => 14,
+                                        'timeLeft' => 222,
+                                        'title' => 'Donate for helpless',
+                                        'subject' => 'Much evil soon high in hope do view. Out may few northward.',
+                                    ],
+                                    [
+                                        'bg' => 'img/causes/2.jpg',
+                                        'videoId' => 'QIYcFth8ty4',
+                                        'linkBlog' => 'donate.html',
+                                        'progres' => 30,
+                                        'raised' => 1.299,
+                                        'goals' => 12.0,
+                                        'donated' => 14,
+                                        'timeLeft' => 222,
+                                        'title' => 'Donate for education',
+                                        'subject' => 'Much evil soon high in hope do view. Out may few northward.',
+                                    ],
+                                    [
+                                        'bg' => 'img/causes/3.jpg',
+                                        'videoId' => 'QIYcFth8ty4',
+                                        'linkBlog' => 'donate.html',
+                                        'progres' => 30,
+                                        'raised' => 1.299,
+                                        'goals' => 12.0,
+                                        'donated' => 14,
+                                        'timeLeft' => 222,
+                                        'title' => 'Donate for helpless',
+                                        'subject' => 'Much evil soon high in hope do view. Out may few northward.',
+                                    ],
+                                    [
+                                        'bg' => 'img/causes/4.jpg',
+                                        'videoId' => 'QIYcFth8ty4',
+                                        'linkBlog' => 'donate.html',
+                                        'progres' => 30,
+                                        'raised' => 1.299,
+                                        'goals' => 12.0,
+                                        'donated' => 14,
+                                        'timeLeft' => 222,
+                                        'title' => 'Donate for helpless',
+                                        'subject' => 'Much evil soon high in hope do view. Out may few northward.',
+                                    ],
+                                ];
+
+                            @endphp
+
+                            @foreach ($data as $row)
+                                @include('page.home._slider', ['section' => 'donation', 'data' => $row])
+                            @endforeach
+
                         </div>
                         <!-- Slider Pagination -->
                         <div class="swiper-pagination"></div>
@@ -376,8 +242,7 @@
         </section>
         <!-- ========== Help process End ========== -->
         <!-- Make a donation Start-->
-        <section id="donate" class="parallax overlay overlay-5"
-            style="background-image:url(img/bg/helping-hands.jpg);">
+        <section id="donate" class="parallax overlay overlay-5" style="background-image:url(img/bg/helping-hands.jpg);">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12 offset-lg-6 offset-md-4  offset-sm-1">
@@ -406,8 +271,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="donateAmount">How much do you want to donate?</label>
-                                    <input type="number" class="form-control" id="donateAmount"
-                                        placeholder="Enter amount">
+                                    <input type="number" class="form-control" id="donateAmount" placeholder="Enter amount">
                                 </div>
                                 <div class="form-group">
                                     <div class="form-check">
