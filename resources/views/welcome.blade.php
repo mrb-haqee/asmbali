@@ -1,1 +1,1 @@
-@include('page.home.home')
+@include('page.detail_blog.detail_blog')
