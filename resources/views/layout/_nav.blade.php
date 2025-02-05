@@ -2,8 +2,8 @@
     <nav class="navbar navbar-inverse navbar-expand-lg header-nav fixed-top light-header">
         <div class="container">
             <a class="navbar-brand" href="#" class="d-flex">
-                {{-- <img src="{{ asset('img/logos/logo-asm.png') }}" style="width: 50px" alt=""> --}}
-                ASM BALI
+                <img src="{{ asset('img/logos/asm-text.png') }}" alt="">
+                {{-- ASM BALI --}}
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCodeply">
                 <i class="icofont-navigation-menu"></i>

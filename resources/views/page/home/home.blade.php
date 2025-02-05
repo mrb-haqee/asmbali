@@ -47,28 +47,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-12 col-xs-12 align-self-center" data-aos="fade-up">
-                        <img class="img-responsive" src="img/about-us.jpg" alt="Helping hands">
+                        <img class="img-responsive" src="img/about.jpg" alt="Helping hands">
                     </div>
                     <div class="col-md-6 col-sm-12 col-xs-12 align-self-center" data-aos="fade-down">
                         <div class="about-box diffuse-shadow p-45px sm-p-25px bg-white">
-                            <h2>About us</h2>
+                            <h2>Tentang ASM</h2>
                             <div class="divider-dashed m-25px-b"></div>
-                            <p>In on announcing if of comparison pianoforte projection. Maids hoped gay yet bed asked blind
-                                dried
-                                point. On abroad danger likely regret twenty edward do.</p>
-                            <p>Too horrible consider followed may differed age. An rest if more five mr of. Age just her
-                                rank met
-                                down way. Attended required so in cheerful an. Domestic replying she resolved him for
-                                did.Rather in
-                                lasted no within no.
-                                Style never met and those among great. At no or september sportsmen he perfectly happiness
-                                attending. Depending listening delivered off new she procuring satisfied sex existence.</p>
-                            Person
-                            plenty answer to exeter it if. Law use assistance especially resolution cultivated did out
-                            sentiments
-                            unsatiable. Way necessary had intention happiness but september delighted his curiosity.
-                            Furniture
-                            furnished or on strangers neglected remainder engrossed.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus consequatur, labore
+                                ipsam laboriosam reiciendis ipsa quibusdam veniam? Fuga, aspernatur dicta.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis minima dolor quaerat
+                                maxime veniam? Inventore exercitationem ad a illum temporibus id debitis nemo, natus sint,
+                                sed odio quia dolore repudiandae!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis minima dolor quaerat
+                                maxime veniam? Inventore exercitationem ad a illum temporibus id debitis nemo, natus sint,
+                                sed odio quia dolore repudiandae!</p>
                         </div>
                     </div>
                 </div>
@@ -83,19 +75,196 @@
                     <div class="col-sm-8 offset-sm-2 text-center promo-video">
                         <h1 class="m-0px-b">Let's Learn more</h1>
                         <h4 class="m-30px-b sm-m-25px-b">Want to learn more about us? Let's check the video</h4>
-                        <div class="video-btn">
-                            <button class="js-modal-btn" data-video-id="02aSj32ePu4" autoplay>
-                                <i class="icofont-video-alt"></i>
-                            </button>
-                        </div>
                     </div>
                 </div>
+                <div class="row mt-2">
+                    <div class="col-sm-4 text-center">
+                        <button class="js-modal-btn video-promo" data-video-id="" autoplay>
+                            <div class="w-100 position-relative">
+                                <img src="img/bg/video-promo.jpg" alt="" class="rounded">
+                                <i class="icofont-video-alt"></i>
+                            </div>
+                        </button>
+                        <h6 class="text-white">Kurban</h6>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <button class="js-modal-btn video-promo" data-video-id="" autoplay>
+                            <div class="w-100 position-relative">
+                                <img src="img/bg/video-promo.jpg" alt="" class="rounded">
+                                <i class="icofont-video-alt"></i>
+                            </div>
+                        </button>
+                        <h6 class="text-white">Jumber</h6>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <button class="js-modal-btn video-promo" data-video-id="" autoplay>
+                            <div class="w-100 position-relative">
+                                <img src="img/bg/video-promo.jpg" alt="" class="rounded">
+                                <i class="icofont-video-alt"></i>
+                            </div>
+                        </button>
+                        <h6 class="text-white">Ambulan</h6>
+                    </div>
+                </div>
+
             </div>
         </section>
         <!-- Video Section End -->
 
+        <!-- ========== Program Unggulan Start ========== -->
+        <section id="programs" class="p-80px-tb bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <div class="section-title text-center m-60px-b">
+                            <h2>Program Unggulan</h2>
+                            <div class="divider-circle mx-auto"></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorum! Lorem ipsum dolor sit
+                                amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="process-wrap">
+                <div class="container">
+                    <div class="row">
+                        @php
+
+                            $dataProgram = [
+                                [
+                                    'icon' => 'icofont-search-2',
+                                    'name' => "Jum'at Berkah",
+                                ],
+                                [
+                                    'icon' => 'icofont-holding-hands',
+                                    'name' => 'Sembako',
+                                ],
+                                [
+                                    'icon' => 'icofont-slidshare',
+                                    'name' => 'Ambulan',
+                                ],
+                                [
+                                    'icon' => 'icofont-simple-smile',
+                                    'name' => 'Khitan Gratis',
+                                ],
+                                [
+                                    'icon' => 'icofont-simple-smile',
+                                    'name' => 'Sosial Dakwah',
+                                ],
+                                [
+                                    'icon' => 'icofont-simple-smile',
+                                    'name' => 'Rumah Tahfidz',
+                                ],
+                            ];
+
+                        @endphp
+
+                        @foreach ($dataProgram as $i => $row)
+                            <!-- Single process item start -->
+                            <div
+                                class="process-item text-center col-md-{{ count($dataProgram) > 4 ? 2 : 3 }} col-sm-6 sm-m-15px-tb">
+                                <div class="process-circle">
+                                    <p>{{ $i + 1 }}</p>
+                                </div>
+                                <div class="icon-outer">
+                                    <i class="{{ $row['icon'] }}"></i>
+                                </div>
+                                <h4 class="m-35px-t sm-m-15px-t">{{ $row['name'] }}</h4>
+                            </div>
+                            <!-- Single process item end -->
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========== Program Unggulan End ========== -->
+
+        {{-- <!-- ========== JUMBER Start ========== -->
+        <section id="jumber" class="p-80px-tb bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <div class="section-title text-center m-60px-b">
+                            <h2>JUM'AT BERKAH</h2>
+                            <div class="divider-circle mx-auto"></div>
+                            <p>Lose away off why half led have near bed. At engage simple father of period others except. My
+                                giving do summer of though narrow marked at.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="swiper-container causes-swiper p-60px-b">
+                        <div class="swiper-wrapper">
+                            @php
+                                $data = [
+                                    [
+                                        'bg' => 'img/causes/1.jpg',
+                                        'videoId' => 'QIYcFth8ty4',
+                                        'linkBlog' => 'donate.html',
+                                        'progres' => 30,
+                                        'raised' => 1.299,
+                                        'goals' => 12.0,
+                                        'donated' => 14,
+                                        'timeLeft' => 222,
+                                        'title' => 'Donate for helpless',
+                                        'subject' => 'Much evil soon high in hope do view. Out may few northward.',
+                                    ],
+                                    [
+                                        'bg' => 'img/causes/2.jpg',
+                                        'videoId' => 'QIYcFth8ty4',
+                                        'linkBlog' => 'donate.html',
+                                        'progres' => 30,
+                                        'raised' => 1.299,
+                                        'goals' => 12.0,
+                                        'donated' => 14,
+                                        'timeLeft' => 222,
+                                        'title' => 'Donate for education',
+                                        'subject' => 'Much evil soon high in hope do view. Out may few northward.',
+                                    ],
+                                    [
+                                        'bg' => 'img/causes/3.jpg',
+                                        'videoId' => 'QIYcFth8ty4',
+                                        'linkBlog' => 'donate.html',
+                                        'progres' => 30,
+                                        'raised' => 1.299,
+                                        'goals' => 12.0,
+                                        'donated' => 14,
+                                        'timeLeft' => 222,
+                                        'title' => 'Donate for helpless',
+                                        'subject' => 'Much evil soon high in hope do view. Out may few northward.',
+                                    ],
+                                    [
+                                        'bg' => 'img/causes/4.jpg',
+                                        'videoId' => 'QIYcFth8ty4',
+                                        'linkBlog' => 'donate.html',
+                                        'progres' => 30,
+                                        'raised' => 1.299,
+                                        'goals' => 12.0,
+                                        'donated' => 14,
+                                        'timeLeft' => 222,
+                                        'title' => 'Donate for helpless',
+                                        'subject' => 'Much evil soon high in hope do view. Out may few northward.',
+                                    ],
+                                ];
+
+                            @endphp
+
+                            @foreach ($data as $row)
+                                @include('page.home._slider', ['section' => 'donation', 'data' => $row])
+                            @endforeach
+
+                        </div>
+                        <!-- Slider Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ========== JUMBER End ========== -->
+
         <!-- ========== Causes Start ========== -->
-        <section id="causes" class="p-80px-tb bg-white">
+        <section id="causes" class="p-80px-tb bg-light">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8 offset-sm-2">
@@ -176,123 +345,7 @@
                 </div>
             </div>
         </section>
-        <!-- ========== Causes End ========== -->
-
-        <!-- ========== Help process Start ========== -->
-        <section id="HelpProcess" class="p-80px-tb bg-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 offset-sm-2">
-                        <div class="section-title text-center m-60px-b">
-                            <h2>Helping process</h2>
-                            <div class="divider-circle mx-auto"></div>
-                            <p>Smile spoke total few great had never their too. Amongst moments do in arrived at my replied.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="process-wrap">
-                <div class="container">
-                    <div class="row">
-                        <!-- Single process item start -->
-                        <div class="process-item text-center col-md-3 col-sm-6 sm-m-15px-tb">
-                            <div class="process-circle">
-                                <p>1</p>
-                            </div>
-                            <div class="icon-outer">
-                                <i class="icofont-search-2"></i>
-                            </div>
-                            <h4 class="m-35px-t sm-m-15px-t">Find the cause</h4>
-                        </div>
-                        <!-- Single process item end -->
-                        <!-- Single process item start -->
-                        <div class="process-item text-center col-md-3 col-sm-6 sm-m-15px-tb">
-                            <div class="process-circle">
-                                <p>2</p>
-                            </div>
-                            <div class="icon-outer">
-                                <i class="icofont-holding-hands"></i>
-                            </div>
-                            <h4 class="m-35px-t sm-m-15px-t">Make a donation</h4>
-                        </div>
-                        <!-- Single process item end -->
-                        <!-- Single process item start -->
-                        <div class="process-item text-center col-md-3 col-sm-6 sm-m-15px-tb">
-                            <div class="process-circle">
-                                <p>3</p>
-                            </div>
-                            <div class="icon-outer">
-                                <i class="icofont-slidshare"></i>
-                            </div>
-                            <h4 class="m-35px-t sm-m-15px-t">Share with peoples</h4>
-                        </div>
-                        <!-- Single process item end -->
-                        <!-- Single process item start -->
-                        <div class="process-item text-center col-md-3 col-sm-6 sm-m-15px-tb">
-                            <div class="process-circle">
-                                <p>4</p>
-                            </div>
-                            <div class="icon-outer">
-                                <i class="icofont-simple-smile"></i>
-                            </div>
-                            <h4 class="m-35px-t sm-m-15px-t">See smiling faces</h4>
-                        </div>
-                        <!-- Single process item end -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ========== Help process End ========== -->
-
-        <!-- Make a donation Start-->
-        <section id="donate" class="parallax overlay overlay-5" style="background-image:url(img/bg/helping-hands.jpg);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12 offset-lg-6 offset-md-4  offset-sm-1">
-                        <div class="diffuse-shadow p-45px sm-p-25px donate-form-wrap opacity-5">
-                            <h3>Make a Donation Now</h3>
-                            <div class="divider-dashed m-25px-b"></div>
-                            <p>Had strictly mrs handsome mistaken cheerful. We it so if resolution invitation remarkably
-                                unpleasant conviction. As into ye then form.</p>
-                            <form class="m-30px-t">
-                                <div class="form-group">
-                                    <label for="donateFor">I Want to Donate</label>
-                                    <select id="donateFor" class="form-control">
-                                        <option selected>For helpless</option>
-                                        <option>For education</option>
-                                        <option>For victimes</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="donateCurrency">Currency</label>
-                                    <select id="donateCurrency" class="form-control">
-                                        <option selected>USD - U.S dollers</option>
-                                        <option>POUND - U.K pounds</option>
-                                        <option>CAD - Canadian doller</option>
-                                        <option>AUD - Austreliean Doller</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="donateAmount">How much do you want to donate?</label>
-                                    <input type="number" class="form-control" id="donateAmount" placeholder="Enter amount">
-                                </div>
-                                <div class="form-group">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                                        <label class="form-check-label" for="gridCheck">
-                                            I want to donate this amount every month
-                                        </label>
-                                    </div>
-                                </div>
-                                <a class="btn btn-default" href="#">Donate now</a>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Make a donation End-->
+        <!-- ========== Causes End ========== --> --}}
 
         <!-- Our gallery Start-->
         <section id="gallery" class="p-80px-tb">
@@ -312,215 +365,90 @@
                     <div class="col-sm-12">
                         <ul class="gallery-filter text-center">
                             <li><a class="btn btn-default btn-small active" href="#" data-filter="*">All</a></li>
-                            <li><a class="btn btn-default btn-small" href="#" data-filter=".charity">Charity</a>
+                            <li><a class="btn btn-default btn-small" href="#" data-filter=".kurban">Kurban</a>
                             </li>
-                            <li><a class="btn btn-default btn-small" href="#" data-filter=".children">Children</a>
+                            <li><a class="btn btn-default btn-small" href="#" data-filter=".jumber">Jumber</a>
                             </li>
-                            <li><a class="btn btn-default btn-small" href="#" data-filter=".food">Food</a></li>
-                            <li><a class="btn btn-default btn-small" href="#" data-filter=".nature">Nature</a></li>
+                            <li><a class="btn btn-default btn-small" href="#" data-filter=".sembako">Sembako</a></li>
+                            <li><a class="btn btn-default btn-small" href="#" data-filter=".event">Event</a></li>
                         </ul>
                         <!--/#gallery-filter-->
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
+
                         <div class="gallery-boxes">
-                            <div class="each-box col-lg-4 col-md-6 col-sm-12 gallery-box charity">
-                                <div class="inner gray-bg text-center">
-                                    <div class="box-hover">
-                                        <img src="img/gallery/1.jpg" alt="Helping by charity" class="img-responsive">
-                                        <div class="mask">
-                                            <div class="mask-inner">
-                                                <h3 class="title">Helping by charity</h3>
-                                                <p class="pera-text">Good draw knew bred ham busy his hour. Ask agreed
-                                                    answer rather
-                                                    joy nature admire wisdom.</p>
-                                                <ul class="nav light-icon gallery-icon">
-                                                    <li><a href="img/gallery/1.jpg" class="gallery-lightbox"
-                                                            title="Porject name"><i class="icofont-image"></i></a></li>
-                                                </ul>
+
+                            @php
+                                $dataGalery = [
+                                    [
+                                        'type' => 'kurban',
+                                        'image' => 'img/hero/kurban.jpg',
+                                        'title' => 'Galerry',
+                                        'subject' =>
+                                            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, hic neque blanditiis iusto debitis',
+                                    ],
+                                    [
+                                        'type' => 'jumber',
+                                        'image' => 'img/hero/camping.jpg',
+                                        'title' => 'Galerry',
+                                        'subject' =>
+                                            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, hic neque blanditiis iusto debitis',
+                                    ],
+                                    [
+                                        'type' => 'jumber',
+                                        'image' => 'img/gallery/1.jpg',
+                                        'title' => 'Galerry',
+                                        'subject' =>
+                                            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, hic neque blanditiis iusto debitis',
+                                    ],
+                                    [
+                                        'type' => 'sembako',
+                                        'image' => 'img/gallery/2.jpg',
+                                        'title' => 'Galerry',
+                                        'subject' =>
+                                            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, hic neque blanditiis iusto debitis',
+                                    ],
+                                    [
+                                        'type' => 'sembako',
+                                        'image' => 'img/gallery/3.jpg',
+                                        'title' => 'Galerry',
+                                        'subject' =>
+                                            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, hic neque blanditiis iusto debitis',
+                                    ],
+                                    [
+                                        'type' => 'event',
+                                        'image' => 'img/gallery/4.jpg',
+                                        'title' => 'Galerry',
+                                        'subject' =>
+                                            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, hic neque blanditiis iusto debitis',
+                                    ],
+                                ];
+                            @endphp
+
+                            @foreach ($dataGalery as $row)
+                                <div class="each-box col-lg-4 col-md-6 col-sm-12 gallery-box {{ $row['type'] }}">
+                                    <div class="inner gray-bg text-center h-100">
+                                        <div class="box-hover ">
+                                            <img src="{{ $row['image'] }}" alt="{{ $row['title'] }}"class="img-responsive">
+                                            <div class="mask">
+                                                <div class="mask-inner">
+                                                    <h3 class="title">{{ $row['title'] }}</h3>
+                                                    <p class="pera-text">{{ $row['subject'] }}</p>
+                                                    <ul class="nav light-icon gallery-icon">
+                                                        <li><a href="{{ $row['image'] }}" class="gallery-lightbox"
+                                                                title="Porject name"><i class="icofont-image"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- End: .inner -->
                                 </div>
-                                <!-- End: .inner -->
-                            </div>
-                            <!-- Single gallery box box end -->
-                            <div class="each-box col-lg-4 col-md-6 col-sm-12 gallery-box children">
-                                <div class="inner gray-bg text-center">
-                                    <div class="box-hover">
-                                        <img src="img/gallery/2.jpg" alt="Help for child" class="img-responsive">
-                                        <div class="mask">
-                                            <div class="mask-inner">
-                                                <h3 class="title">Helping for child</h3>
-                                                <p class="pera-text">Good draw knew bred ham busy his hour. Ask agreed
-                                                    answer rather
-                                                    joy nature admire wisdom.</p>
-                                                <ul class="nav light-icon gallery-icon">
-                                                    <li><a href="img/gallery/2.jpg" class="gallery-lightbox"
-                                                            title="Porject name"><i class="icofont-image"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End: .inner -->
-                            </div>
-                            <!-- Single gallery box box end -->
-                            <!-- Single gallery box box end -->
-                            <div class="each-box col-lg-4 col-md-6 col-sm-12 gallery-box food">
-                                <div class="inner gray-bg text-center">
-                                    <div class="box-hover">
-                                        <img src="img/gallery/3.jpg" alt="Education help" class="img-responsive">
-                                        <div class="mask">
-                                            <div class="mask-inner">
-                                                <h3 class="title">Helping for education</h3>
-                                                <p class="pera-text">Good draw knew bred ham busy his hour. Ask agreed
-                                                    answer rather
-                                                    joy nature admire wisdom.</p>
-                                                <ul class="nav light-icon gallery-icon">
-                                                    <li><a href="img/gallery/3.jpg" class="gallery-lightbox"
-                                                            title="Porject name"><i class="icofont-image"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End: .inner -->
-                            </div>
-                            <!-- Single gallery box box end -->
-                            <!-- Single gallery box box end -->
-                            <div class="each-box col-lg-4 col-md-6 col-sm-12 gallery-box nature">
-                                <div class="inner gray-bg text-center">
-                                    <div class="box-hover">
-                                        <img src="img/gallery/4.jpg" alt="Nature" class="img-responsive">
-                                        <div class="mask">
-                                            <div class="mask-inner">
-                                                <h3 class="title">Saveing nature</h3>
-                                                <p class="pera-text">Good draw knew bred ham busy his hour. Ask agreed
-                                                    answer rather
-                                                    joy nature admire wisdom.</p>
-                                                <ul class="nav light-icon gallery-icon">
-                                                    <li><a href="img/gallery/4.jpg" class="gallery-lightbox"
-                                                            title="Porject name"><i class="icofont-image"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End: .inner -->
-                            </div>
-                            <!-- Single gallery box box end -->
-                            <!-- Single gallery box box end -->
-                            <div class="each-box col-lg-4 col-md-6 col-sm-12 gallery-box charity">
-                                <div class="inner gray-bg text-center">
-                                    <div class="box-hover">
-                                        <img src="img/gallery/5.jpg" alt="Charity" class="img-responsive">
-                                        <div class="mask">
-                                            <div class="mask-inner">
-                                                <h3 class="title">Our charity</h3>
-                                                <p class="pera-text">Good draw knew bred ham busy his hour. Ask agreed
-                                                    answer rather
-                                                    joy nature admire wisdom.</p>
-                                                <ul class="nav light-icon gallery-icon">
-                                                    <li><a href="img/gallery/5.jpg" class="gallery-lightbox"
-                                                            title="Porject name"><i class="icofont-image"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End: .inner -->
-                            </div>
-                            <!-- Single gallery box box end -->
-                            <!-- Single gallery box box end -->
-                            <div class="each-box col-lg-4 col-md-6 col-sm-12 gallery-box children">
-                                <div class="inner gray-bg text-center">
-                                    <div class="box-hover">
-                                        <img src="img/gallery/6.jpg" alt="Children" class="img-responsive">
-                                        <div class="mask">
-                                            <div class="mask-inner">
-                                                <h3 class="title">Children are hopless</h3>
-                                                <p class="pera-text">Good draw knew bred ham busy his hour. Ask agreed
-                                                    answer rather
-                                                    joy nature admire wisdom.</p>
-                                                <ul class="nav light-icon gallery-icon">
-                                                    <li><a href="img/gallery/6.jpg" class="gallery-lightbox"
-                                                            title="Porject name"><i class="icofont-image"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End: .inner -->
-                            </div>
-                            <!-- Single gallery box box end -->
-                            <!-- Single gallery box box end -->
-                            <div class="each-box col-lg-4 col-md-6 col-sm-12 gallery-box food">
-                                <div class="inner gray-bg text-center">
-                                    <div class="box-hover">
-                                        <img src="img/gallery/7.jpg" alt="Food" class="img-responsive">
-                                        <div class="mask">
-                                            <div class="mask-inner">
-                                                <h3 class="title">Food supplie</h3>
-                                                <p class="pera-text">Good draw knew bred ham busy his hour. Ask agreed
-                                                    answer rather
-                                                    joy nature admire wisdom.</p>
-                                                <ul class="nav light-icon gallery-icon">
-                                                    <li><a href="img/gallery/7.jpg" class="gallery-lightbox"
-                                                            title="Porject name"><i class="icofont-image"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End: .inner -->
-                            </div>
-                            <!-- Single gallery box box end -->
-                            <!-- Single gallery box box end -->
-                            <div class="each-box col-lg-4 col-md-6 col-sm-12 gallery-box nature">
-                                <div class="inner gray-bg text-center">
-                                    <div class="box-hover">
-                                        <img src="img/gallery/8.jpg" alt="Nature" class="img-responsive">
-                                        <div class="mask">
-                                            <div class="mask-inner">
-                                                <h3 class="title">Save animales</h3>
-                                                <p class="pera-text">Good draw knew bred ham busy his hour. Ask agreed
-                                                    answer rather
-                                                    joy nature admire wisdom.</p>
-                                                <ul class="nav light-icon gallery-icon">
-                                                    <li><a href="img/gallery/8.jpg" class="gallery-lightbox"
-                                                            title="Porject name"><i class="icofont-image"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End: .inner -->
-                            </div>
-                            <!-- Single gallery box box end -->
-                            <!-- Single gallery box box end -->
-                            <div class="each-box col-lg-4 col-md-6 col-sm-12 gallery-box charity">
-                                <div class="inner gray-bg text-center">
-                                    <div class="box-hover">
-                                        <img src="img/gallery/9.jpg" alt="Charity" class="img-responsive">
-                                        <div class="mask">
-                                            <div class="mask-inner">
-                                                <h3 class="title">Charity work</h3>
-                                                <p class="pera-text">Good draw knew bred ham busy his hour. Ask agreed
-                                                    answer rather
-                                                    joy nature admire wisdom.</p>
-                                                <ul class="nav light-icon gallery-icon">
-                                                    <li><a href="img/gallery/9.jpg" class="gallery-lightbox"
-                                                            title="Porject name"><i class="icofont-image"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End: .inner -->
-                            </div>
-                            <!-- Single gallery box box end -->
+                            @endforeach
+
                         </div>
                     </div>
                 </div>
@@ -531,7 +459,17 @@
         <section id="donors" class="p-80px-tb bg-light">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 p-25px-r sm-p-15px-r">
+                    <div class="col-sm-8 offset-sm-2">
+                        <div class="section-title text-center m-60px-b">
+                            <h2>Donatur</h2>
+                            <div class="divider-circle mx-auto"></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rerum esse excepturi,
+                                numquam ratione maxime.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    {{-- <div class="col-lg-6 col-md-12 p-25px-r sm-p-15px-r">
                         <div class="m-30px-b">
                             <h2>Top donors</h2>
                             <div class="divider-dashed m-25px-b"></div>
@@ -565,15 +503,48 @@
                                 </div>
                             </div>
                         </div>
+                    </div> --}}
+                    <div class="col-lg-6 col-md-12 p-25px-l sm-p-15px-l sm-m-25px-t">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="donor-box corporate-donor m-20px-t m-20px-b sm-m-0px-t">
+                                    <img src="img/donors/1.png" alt="">
+                                    <a href="#">Visit site <i class="icofont-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="donor-box corporate-donor m-20px-t m-20px-b sm-m-0px-t">
+                                    <img src="img/donors/2.png" alt="">
+                                    <a href="#">Visit site <i class="icofont-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="donor-box corporate-donor m-20px-t m-20px-b sm-m-0px-t">
+                                    <img src="img/donors/3.png" alt="">
+                                    <a href="#">Visit site <i class="icofont-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="donor-box corporate-donor m-20px-t m-20px-b sm-m-0px-t">
+                                    <img src="img/donors/4.png" alt="">
+                                    <a href="#">Visit site <i class="icofont-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="donor-box corporate-donor m-20px-t m-20px-b sm-m-0px-t">
+                                    <img src="img/donors/1.png" alt="">
+                                    <a href="#">Visit site <i class="icofont-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="donor-box corporate-donor m-20px-t m-20px-b sm-m-0px-t">
+                                    <img src="img/donors/3.png" alt="">
+                                    <a href="#">Visit site <i class="icofont-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-6 col-md-12 p-25px-l sm-p-15px-l sm-m-25px-t">
-                        <div class="m-30px-b">
-                            <h2>Top Corporate Donors</h2>
-                            <div class="divider-dashed m-25px-b"></div>
-                            <p class="m-0px-b">Carried nothing on am warrant towards. Polite in of in oh needed itself
-                                silent
-                                course.</p>
-                        </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="donor-box corporate-donor m-20px-t m-20px-b sm-m-0px-t">
@@ -617,13 +588,13 @@
             </div>
         </section>
         <!-- Donor lists End -->
-        <!-- Testimonials Start -->
-        <section id="testimonials" class="p-80px-tb bg-white">
+        <!-- Sertifikasi Start -->
+        <section id="sertifikasi" class="p-80px-tb bg-white">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8 offset-sm-2">
                         <div class="section-title text-center m-60px-b">
-                            <h2>Testimonials</h2>
+                            <h2>Sertifikasi</h2>
                             <div class="divider-circle mx-auto"></div>
                             <p>Dispatched entreaties boisterous say why stimulated. Certain forbade picture now prevent
                                 carried
@@ -634,78 +605,52 @@
                 <div class="row">
                     <div class="swiper-container testimonialSwiper p-50px-b">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="row single-testimonial">
-                                    <div class="col-sm-12 col-md-5 col-lg-3 align-self-center">
-                                        <img class="img-thumbnail" src="img/donors/1.jpg" alt="">
-                                    </div>
-                                    <div class="col-sm-12 col-md-7 col-lg-9 align-self-center">
-                                        <div class="p-30px testimonial-content bg-white">
-                                            <h3>John Deo</h3>
-                                            <blockquote>
-                                                Is at purse tried jokes china ready decay an. Small its shy way had woody
-                                                downs power.
-                                                To denoting admitted speaking learning my exercise so in. Procured shutters
-                                                mr it
-                                                feelings. To or three offer house begin taken am at. As dissuade cheerful
-                                                overcame so
-                                                of friendly he indulged unpacked.
-                                            </blockquote>
+                            @php
+                                $dataSertifikasi = [
+                                    [
+                                        'image' => 'img/500x500.jpg',
+                                        'name' => 'Sertifikasi Baznas',
+                                        'text' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eum ut
+                                                nobis est, magni vero natus quam, ratione blanditiis ea similique temporibus
+                                                repudiandae deleniti aspernatur maiores! Dolore voluptate aliquid
+                                                architecto.',
+                                    ],
+                                    [
+                                        'image' => 'img/500x500.jpg',
+                                        'name' => 'Akta Yayasan',
+                                        'text' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eum ut
+                                                nobis est, magni vero natus quam, ratione blanditiis ea similique temporibus
+                                                repudiandae deleniti aspernatur maiores! Dolore voluptate aliquid
+                                                architecto.',
+                                    ],
+                                ];
+                            @endphp
+                            @foreach ($dataSertifikasi as $row)
+                                <div class="swiper-slide">
+                                    <div class="row single-testimonial">
+                                        <div class="col-sm-12 col-md-5 col-lg-3 align-self-center">
+                                            <img class="img-thumbnail" src="{{ $row['image'] }}" alt="">
+                                        </div>
+                                        <div class="col-sm-12 col-md-7 col-lg-9 align-self-center">
+                                            <div class="p-30px testimonial-content bg-white">
+                                                <h3>{{ $row['name'] }}</h3>
+                                                <blockquote>{{ $row['text'] }}</blockquote>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="row single-testimonial">
-                                    <div class="col-sm-12 col-md-5 col-lg-3 align-self-center">
-                                        <img class="img-thumbnail" src="img/donors/2.jpg" alt="">
-                                    </div>
-                                    <div class="col-sm-12 col-md-7 col-lg-9 align-self-center">
-                                        <div class="p-30px testimonial-content bg-white">
-                                            <h3>Jenefar Deo</h3>
-                                            <blockquote>
-                                                In by an appetite no humoured returned informed. Possession so comparison
-                                                inquietude he
-                                                he conviction no decisively. Marianne jointure attended she hastened
-                                                surprise but she.
-                                                Ever lady son yet you very paid form away. He advantage of exquisite
-                                                resolving if on
-                                                tolerably. Become sister on in garden it barton waited on.
-                                            </blockquote>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="row single-testimonial">
-                                    <div class="col-sm-12 col-md-5 col-lg-3 align-self-center">
-                                        <img class="img-thumbnail" src="img/donors/3.jpg" alt="">
-                                    </div>
-                                    <div class="col-sm-12 col-md-7 col-lg-9 align-self-center">
-                                        <div class="p-30px testimonial-content bg-white">
-                                            <h3>Steve K.</h3>
-                                            <blockquote>
-                                                Received the likewise law graceful his. Nor might set along charm now equal
-                                                green.
-                                                Pleased yet equally correct colonel not one. Say anxious carried compact
-                                                conduct sex
-                                                general nay certain. Mrs for recommend exquisite household eagerness
-                                                preserved now. My
-                                                improved honoured he am ecstatic quitting greatest formerly.
-                                            </blockquote>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
+
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Testimonials End -->
-        <!-- Volunteers Start -->
-        <section id="volunteers" class="p-80px-tb bg-light">
+        <!-- Sertifikasi End -->
+
+        <!-- Pengurus Start -->
+        <section id="pengurus" class="p-80px-tb bg-light">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8 offset-sm-2">
@@ -721,146 +666,82 @@
                 <div class="row">
                     <div class="swiper-container volunteers-swiper p-60px-b">
                         <div class="swiper-wrapper">
-                            <!-- Start single volunteer -->
-                            <div class="swiper-slide">
-                                <div class="col">
-                                    <div class="each-box">
-                                        <div class="inner gray-bg text-center">
-                                            <div class="box-hover">
-                                                <img src="img/volunteers/1.jpg" alt="Children" class="img-responsive">
-                                                <div class="mask">
-                                                    <div class="mask-inner">
-                                                        <h3 class="title">Abraham L.</h3>
-                                                        <p class="pera-text">Helping over 5+ years</p>
-                                                        <ul class="nav light-icon vol-social-icon">
-                                                            <li><a href="#"><i class="icofont-twitter"></i></a></li>
-                                                            <li><a href="#"><i class="icofont-google-plus"></i></a>
-                                                            </li>
-                                                            <li><a href="#"><i class="icofont-facebook"></i></a>
-                                                            </li>
-                                                            <li><a href="#"><i class="icofont-share"></i></a></li>
-                                                        </ul>
+
+                            @php
+                                $dataPengurus = [
+                                    [
+                                        'image' => 'img/400x600.png',
+                                        'name' => 'Edi Santoso',
+                                        'jabatan' => 'Ketua',
+                                        'wa' => 'https://wa.me/',
+                                        'ig' => 'https://www.instagram.com/asm_bali/',
+                                    ],
+                                    [
+                                        'image' => 'img/400x600.png',
+                                        'name' => 'Nabil',
+                                        'jabatan' => 'Sekretaris',
+                                        'wa' => 'https://wa.me/',
+                                        'ig' => 'https://www.instagram.com/asm_bali/',
+                                    ],
+                                    [
+                                        'image' => 'img/400x600.png',
+                                        'name' => 'Novrizal',
+                                        'jabatan' => 'Bendahara',
+                                        'wa' => 'https://wa.me/',
+                                        'ig' => 'https://www.instagram.com/asm_bali/',
+                                    ],
+                                    [
+                                        'image' => 'img/400x600.png',
+                                        'name' => 'Agung Rama Satria',
+                                        'jabatan' => 'PJ',
+                                        'wa' => 'https://wa.me/',
+                                        'ig' => 'https://www.instagram.com/asm_bali/',
+                                    ],
+                                    [
+                                        'image' => 'img/400x600.png',
+                                        'name' => 'Agung Rama Satria',
+                                        'jabatan' => 'PJ',
+                                        'wa' => 'https://wa.me/',
+                                        'ig' => 'https://www.instagram.com/asm_bali/',
+                                    ],
+                                ];
+                            @endphp
+
+                            @foreach ($dataPengurus as $row)
+                                <div class="swiper-slide">
+                                    <div class="col">
+                                        <div class="each-box">
+                                            <div class="inner gray-bg text-center">
+                                                <div class="box-hover">
+                                                    <img src="{{ $row['image'] }}" alt="Children"
+                                                        class="img-responsive">
+                                                    <div class="mask">
+                                                        <div class="mask-inner">
+                                                            <h3 class="title">{{ $row['name'] }}</h3>
+                                                            <p class="pera-text">{{ $row['jabatan'] }}</p>
+                                                            <ul class="nav light-icon vol-social-icon">
+                                                                <li>
+                                                                    <a href="{{ $row['wa'] }}">
+                                                                        <i class="icofont-whatsapp"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="{{ $row['ig'] }}">
+                                                                        <i class="icofont-instagram"></i>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <!-- End: .inner -->
                                         </div>
-                                        <!-- End: .inner -->
                                     </div>
                                 </div>
-                            </div>
-                            <!-- End single volunteer -->
-                            <!-- Start single volunteer -->
-                            <div class="swiper-slide">
-                                <div class="col">
-                                    <div class="each-box">
-                                        <div class="inner gray-bg text-center">
-                                            <div class="box-hover">
-                                                <img src="img/volunteers/2.jpg" alt="Children" class="img-responsive">
-                                                <div class="mask">
-                                                    <div class="mask-inner">
-                                                        <h3 class="title">Mollie S.</h3>
-                                                        <p class="pera-text">Helping over 4+ years</p>
-                                                        <ul class="nav light-icon vol-social-icon">
-                                                            <li><a href="#"><i class="icofont-twitter"></i></a></li>
-                                                            <li><a href="#"><i class="icofont-google-plus"></i></a>
-                                                            </li>
-                                                            <li><a href="#"><i class="icofont-facebook"></i></a>
-                                                            </li>
-                                                            <li><a href="#"><i class="icofont-share"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End: .inner -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End single volunteer -->
-                            <!-- Start single volunteer -->
-                            <div class="swiper-slide">
-                                <div class="col">
-                                    <div class="each-box">
-                                        <div class="inner gray-bg text-center">
-                                            <div class="box-hover">
-                                                <img src="img/volunteers/3.jpg" alt="Children" class="img-responsive">
-                                                <div class="mask">
-                                                    <div class="mask-inner">
-                                                        <h3 class="title">Sajid K.</h3>
-                                                        <p class="pera-text">Helping over 3+ years</p>
-                                                        <ul class="nav light-icon vol-social-icon">
-                                                            <li><a href="#"><i class="icofont-twitter"></i></a></li>
-                                                            <li><a href="#"><i class="icofont-google-plus"></i></a>
-                                                            </li>
-                                                            <li><a href="#"><i class="icofont-facebook"></i></a>
-                                                            </li>
-                                                            <li><a href="#"><i class="icofont-share"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End: .inner -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End single volunteer -->
-                            <!-- Start single volunteer -->
-                            <div class="swiper-slide">
-                                <div class="col">
-                                    <div class="each-box">
-                                        <div class="inner gray-bg text-center">
-                                            <div class="box-hover">
-                                                <img src="img/volunteers/4.jpg" alt="Children" class="img-responsive">
-                                                <div class="mask">
-                                                    <div class="mask-inner">
-                                                        <h3 class="title">Maria D.</h3>
-                                                        <p class="pera-text">Helping over 2+ years</p>
-                                                        <ul class="nav light-icon vol-social-icon">
-                                                            <li><a href="#"><i class="icofont-twitter"></i></a></li>
-                                                            <li><a href="#"><i class="icofont-google-plus"></i></a>
-                                                            </li>
-                                                            <li><a href="#"><i class="icofont-facebook"></i></a>
-                                                            </li>
-                                                            <li><a href="#"><i class="icofont-share"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End: .inner -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End single volunteer -->
-                            <!-- Start single volunteer -->
-                            <div class="swiper-slide">
-                                <div class="col">
-                                    <div class="each-box">
-                                        <div class="inner gray-bg text-center">
-                                            <div class="box-hover">
-                                                <img src="img/volunteers/5.jpg" alt="Children" class="img-responsive">
-                                                <div class="mask">
-                                                    <div class="mask-inner">
-                                                        <h3 class="title">Daniyel H.</h3>
-                                                        <p class="pera-text">Helping over 3 months</p>
-                                                        <ul class="nav light-icon vol-social-icon">
-                                                            <li><a href="#"><i class="icofont-twitter"></i></a></li>
-                                                            <li><a href="#"><i class="icofont-google-plus"></i></a>
-                                                            </li>
-                                                            <li><a href="#"><i class="icofont-facebook"></i></a>
-                                                            </li>
-                                                            <li><a href="#"><i class="icofont-share"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End: .inner -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End single volunteer -->
+                            @endforeach
+
+
 
                         </div>
                         <!-- Add Pagination -->
@@ -869,18 +750,18 @@
                 </div>
             </div>
         </section>
-        <!-- Volunteers End -->
-        <!-- Join volunteers Start-->
-        <section id="JoinVolenteers" class="p-80px-tb">
+        <!-- Pengurus End -->
+
+        <!-- Join TPQ Start-->
+        <section id="joinTPQ" class="p-80px-tb">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-12 sm-m-35px-b">
-                        <h2>Join as Volenteer</h2>
+                        <h2>Join Rumah Tahfidz ASM</h2>
                         <div class="divider-dashed m-25px-b"></div>
-                        <p class="m-25px-b">Real sold my in call. Invitation on an advantages collecting. But event old
-                            above shy
-                            bed noisy. Had sister see wooded favour income has. Stuff rapid since do as hence. Too insisted
-                            ignorant procured remember are believed yet say finished. </p>
+                        <p class="m-25px-b">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem minima nemo
+                            earum vitae aliquam nobis harum explicabo iusto amet. Placeat accusamus commodi obcaecati
+                            accusantium doloremque esse temporibus modi, fuga libero?</p>
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="asset-box">
@@ -898,14 +779,15 @@
                         <a class="btn btn-default" href="#">Join now</a>
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <img src="img/vollentiers.jpg" alt="">
+                        <img src="img/hero/kurban.jpg" alt="">
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Join volunteers End-->
+        <!-- Join TPQ End-->
+
         <!-- Start Blog Section -->
-        <section id="blog" class="p-80px-tb bg-light">
+        {{-- <section id="blog" class="p-80px-tb bg-light">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8 offset-sm-2">
@@ -1006,10 +888,11 @@
                     <!-- End Single blog -->
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- End Blog Section -->
+
         <!-- Start contact section  -->
-        <section id="contact" class="p-80px-tb bg-white">
+        <section id="contact" class="p-80px-tb bg-light">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8 offset-sm-2">
@@ -1024,16 +907,16 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-8 col-md-6 col-sm-12 m-25px-b">
-                        <div class="contact-form-box bg-light" id="map" style="width: 100%; height: 100%;">
+                        <div class="contact-form-box bg-light w-100 rounded" id="map" style="height: 450px;">
                         </div>
                     </div>
                     <!-- End contact form area-->
                     <div class="col-lg-4 col-md-6 col-sm-12 m-25px-b">
-                        <div class="address-wrap bg-light p-30px">
+                        <div class="address-wrap bg-white p-30px rounded">
                             <ul>
-                                <li><span>Address:</span>15/E, Lankaway <br> Florida, USA 99544</li>
-                                <li><span>Phone:</span><a href="#">112 444 7900</a></li>
-                                <li><span>Email:</span><a href="#">info@prottasha.com</a></li>
+                                <li><span>Address:</span>Jl. Gn. Talang VI No.B-1, Padangsambian<br> Denpasar Barat</li>
+                                <li><span>Phone:</span><a href="#">+62</a></li>
+                                <li><span>Email:</span><a href="#">-</a></li>
                             </ul>
                             <h4>Connect our socials</h4>
                             <ul class="nav light-icon social-icons">
@@ -1049,13 +932,71 @@
         </section>
         <!-- End contact section -->
     @endsection
-  
+
     @push('style')
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
+        <style>
+            .video-promo i {
+                top: 50%;
+                left: 50%;
+                position: absolute;
+                font-size: 2rem;
+                transition: color 0.3s, border 0.3s, transform 0.3s;
+                color: white;
+
+                transform: translate(-50%, -50%);
+            }
+
+            .video-promo i:hover {
+                color: red;
+                /* Mengubah warna ikon menjadi merah */
+                transform: translate(-50%, -50%) scale(2);
+                /* Memperbesar ikon */
+            }
+
+            .video-promo img {
+                transition: color 0.3s, border 0.3s, transform 0.3s;
+            }
+
+            .video-promo img:hover {
+                transform: scale(1.3);
+            }
+
+            .gallery-item {
+                width: 200px;
+                padding: 5px;
+            }
+        </style>
     @endpush
 
     @push('scripts')
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            var map;
+
+            function initMap() {
+                // Coordinates for ASM Bali
+                var location = {
+                    lat: -8.6723405,
+                    lng: 115.1873575
+                };
+
+                // Initialize the map
+                map = new google.maps.Map(document.getElementById('map'), {
+                    center: location,
+                    zoom: 19 // Adjust the zoom level as needed
+                });
+
+                // Add a marker at the location
+                var marker = new google.maps.Marker({
+                    position: location,
+                    map: map,
+                    title: 'ASM Bali'
+                });
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/gh/somanchiu/Keyless-Google-Maps-API@v6.8/mapsJavaScriptAPI.js" async defer>
+        </script>
+        <script src="{{ asset('js/aos.js') }}"></script>
         <script>
             AOS.init();
         </script>
