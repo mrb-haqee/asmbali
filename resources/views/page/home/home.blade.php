@@ -655,10 +655,9 @@
                 <div class="row">
                     <div class="col-sm-8 offset-sm-2">
                         <div class="section-title text-center m-60px-b">
-                            <h2>Our volunteers</h2>
+                            <h2>Pengurus Yayasan</h2>
                             <div class="divider-circle mx-auto"></div>
-                            <p>Perhaps far exposed age effects. Now distrusts you her delivered applauded affection out
-                                sincerity.
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, nesciunt.
                             </p>
                         </div>
                     </div>
