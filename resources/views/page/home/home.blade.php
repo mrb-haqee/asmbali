@@ -456,7 +456,7 @@
         </section>
         <!-- Our gallery End-->
         <!-- Donor lists Start -->
-        <section id="donors" class="p-80px-tb bg-light">
+        <section id="donatur" class="p-80px-tb bg-light">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8 offset-sm-2">
@@ -933,39 +933,6 @@
     @endsection
 
     @push('style')
-        <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
-        <style>
-            .video-promo i {
-                top: 50%;
-                left: 50%;
-                position: absolute;
-                font-size: 2rem;
-                transition: color 0.3s, border 0.3s, transform 0.3s;
-                color: white;
-
-                transform: translate(-50%, -50%);
-            }
-
-            .video-promo i:hover {
-                color: red;
-                /* Mengubah warna ikon menjadi merah */
-                transform: translate(-50%, -50%) scale(2);
-                /* Memperbesar ikon */
-            }
-
-            .video-promo img {
-                transition: color 0.3s, border 0.3s, transform 0.3s;
-            }
-
-            .video-promo img:hover {
-                transform: scale(1.3);
-            }
-
-            .gallery-item {
-                width: 200px;
-                padding: 5px;
-            }
-        </style>
     @endpush
 
     @push('scripts')

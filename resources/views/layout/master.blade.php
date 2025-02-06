@@ -13,7 +13,8 @@
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" />
     <!---IcoFont Icon font-->
-    <link rel="stylesheet" href="{{ asset('css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/plugins.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     <link rel="stylesheet" href="{{ asset('demo/demo.css') }}">
     <link rel="stylesheet" href="{{ asset('css/colors/orange.css') }}" id="color-switch">
 </head>
@@ -66,7 +67,6 @@
     @stack('style')
     <!--end::Javascript-->
 
-   
 
     <!--end::Custom Javascript-->
     @stack('scripts')

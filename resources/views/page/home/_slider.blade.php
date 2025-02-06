@@ -3,10 +3,10 @@
         <div class="hero-area hero-slide" style="background-image:url('{{ $data['bg'] }}');">
             <div class="overlay overlay-5"></div>
             <div class="container">
-                <div class="row full-height align-items-center text-center">
-                    <div class="col p-100px-t p-50px-b slider-text">
+                <div class="row full-height align-items-center">
+                    <div class="col p-100px-t p-50px-b slider-text text-center">
                         <div class="d-flex justify-content-center align-content-center mb-3 fade-in">
-                            <img src="{{ asset('img/logos/asm.png') }}" style="width: 150px" alt="logo asm">
+                            <img src="{{ asset('img/logos/asm.png') }}" alt="logo asm">
                         </div>
                         <h4 class="tlt1">{{ $data['title'] }}</h4>
                         <div class="divider-circle mt-4"></div>
