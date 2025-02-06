@@ -7,7 +7,7 @@
         <!-- ========== Slider Start ========== -->
         <section id="home">
             <div class="swiper-container hero-swiper">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper ">
 
                     @php
                         $data = [

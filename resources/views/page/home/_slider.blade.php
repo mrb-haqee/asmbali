@@ -1,9 +1,9 @@
 @if ($section === 'header')
     <div class="swiper-slide">
-        <div class="hero-area hero-slide" style="background-image:url('{{ $data['bg'] }}');">
+        <div class="hero-area hero-slide " style="background-image:url('{{ $data['bg'] }}');">
             <div class="overlay overlay-5"></div>
             <div class="container">
-                <div class="row full-height align-items-center">
+                <div class="row full-height align-items-center" style="height: 100vh;">
                     <div class="col p-100px-t p-50px-b slider-text text-center">
                         <div class="d-flex justify-content-center align-content-center mb-3 fade-in">
                             <img src="{{ asset('img/logos/asm.png') }}" alt="logo asm">
