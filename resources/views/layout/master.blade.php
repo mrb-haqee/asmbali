@@ -17,9 +17,14 @@
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     <link rel="stylesheet" href="{{ asset('demo/demo.css') }}">
     <link rel="stylesheet" href="{{ asset('css/colors/orange.css') }}" id="color-switch">
+
+    <!--end::Custom Javascript-->
+    @stack('style')
+    <!--end::Javascript-->
+    @livewireStyles
 </head>
 
-<body data-spy="scroll" data-target="#navbarCodeply" data-offset="70">
+<body data-bs-spy="scroll" data-bs-target="#navbarCodeply" data-bs-offset="70">
     <div id="preloader-wrap">
         <div class="preloader"></div>
     </div>
@@ -38,34 +43,41 @@
     @include('layout._footer')
     <!-- ========== Header Footer End ========== -->
 
-    <!-- jQuery -->
-    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
-    <script src="{{ asset('js/jquery-migrate-3.0.0.min.js') }}"></script>
-    <!-- Bootstrap JS -->
+    <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
+    {{-- <script src="{{ asset('js/jquery-migrate.min.js') }}"></script> --}}
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <!-- Animated text -->
     <script src="{{ asset('js/jquery.textillate.js') }}"></script>
     <script src="{{ asset('js/jquery.lettering.js') }}"></script>
     <script src="{{ asset('js/jquery.fittext.js') }}"></script>
-    <!-- Magnific Popup core JS -->
     <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
-    <!-- Modal video Popup core JS -->
     <script src="{{ asset('js/modal-video.min.js') }}"></script>
-    <!-- Waypoints JS -->
-    <script src="{{ asset('js/waypoints.min.js') }}"></script>
-    <!-- CounterUp JS -->
+    <script src="{{ asset('js/jquery.waypoints.min.js') }}"></script>
     <script src="{{ asset('js/jquery.counterup.min.js') }}"></script>
-    <!-- Isotop JS -->
     <script src="{{ asset('js/isotope.pkgd.min.js') }}"></script>
-    <!-- AjaxChimp js -->
     <script src="{{ asset('js/jquery.ajaxchimp.min.js') }}"></script>
-    <!-- Swiper JS -->
     <script src="{{ asset('js/swiper.min.js') }}"></script>
-    <!-- Custom -->
     <script src="{{ asset('js/custom.js') }}"></script>
-    <!--end::Custom Javascript-->
-    @stack('style')
-    <!--end::Javascript-->
+    <script src="{{ asset('js/aos.js') }}"></script>
+    @livewireScripts(['turbo' => true])
+
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        document.addEventListener("livewire:navigated", function() {
+            console.log("Livewire navigated - Event detected!", new Date());
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("DOM fully loaded");
+        });
+
+        window.addEventListener("load", function() {
+            console.log("Page fully loaded");
+        });
+    </script>
+
+
 
 
     <!--end::Custom Javascript-->

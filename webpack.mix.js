@@ -28,16 +28,16 @@ mix.styles(
         ],
     });
 
-mix.styles(
-    [
-        "resources/asset/css/style.css",
-        "resources/asset/css/responsive.css",
-        "resources/asset/css/margin-paddings.css",
-    ],
-    "public/css/custom.css"
-);
+// mix.styles(
+//     [
+//         "resources/asset/css/style.css",
+//         "resources/asset/css/responsive.css",
+//         "resources/asset/css/margin-paddings.css",
+//     ],
+//     "public/css/custom.css"
+// );
 
-mix.copyDirectory("resources/asset/css/colors", "public/css/colors");
+// mix.copyDirectory("resources/asset/css/colors", "public/css/colors");
 // mix.copyDirectory("resources/asset/js", "public/js");
 // mix.copyDirectory("resources/asset/demo", "public/demo");
 // mix.copyDirectory("resources/asset/fonts", "public/fonts");

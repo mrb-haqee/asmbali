@@ -203,6 +203,7 @@ hr {
 }
 .btn-default:before {
     background-color: #32332d;
+    color: #ffffff;
 }
 .btn-default {
     background-color: #38c695;
@@ -636,7 +637,7 @@ hr {
 .video-promo i:hover {
     color: red;
     /* Mengubah warna ikon menjadi merah */
-    transform: translate(-50%, -50%) scale(2);
+    transform: translate(-50%, -50%) scale(1.5);
     /* Memperbesar ikon */
 }
 
@@ -645,7 +646,7 @@ hr {
 }
 
 .video-promo img:hover {
-    transform: scale(1.3);
+    transform: scale(1.08);
 }
 /* 7. CAUSES SECTION */
 .content-box img {
@@ -1850,6 +1851,26 @@ a.btn.btn-readmore:hover {
     width: 100%;
 }
 
+#button-hotline {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    text-decoration: none;
+    display: none;
+    border-radius: 20px;
+}
+#button-hotline div {
+    border-radius: 20px;
+}
+
+#button-hotline img {
+    width: 30px;
+}
+#button-hotline p {
+    color: black;
+}
+
 @media (min-width: 992px) {
     .header-nav .navbar-nav > li .sub-menu {
         background: #fff;
@@ -2004,6 +2025,10 @@ a.btn.btn-readmore:hover {
     #sidebar-right .p-60px-r {
         padding-right: 0px;
     }
+
+    #button-hotline p {
+        display: none;
+    }
 }
 
 /* Mobile Layout: 320px. */
@@ -2011,6 +2036,9 @@ a.btn.btn-readmore:hover {
 @media only screen and (max-width: 767px) {
     #icon-asm {
         width: 60%;
+    }
+    #button-hotline p {
+        display: none;
     }
 
     h1 {
@@ -2110,6 +2138,9 @@ a.btn.btn-readmore:hover {
 /* Wide Mobile Layout: 480px. */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+    #button-hotline p {
+        display: none;
+    }
 }
 
 /*==============================

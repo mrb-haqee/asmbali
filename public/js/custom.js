@@ -38,18 +38,29 @@ var PATH = {};
     /******************** 2. ADD CLASS HEADER ********************/
     PATH.HeaderSticky = function () {
         $(".navbar-toggler").on("click", function (a) {
-            a.preventDefault(), $(".navbar").addClass("fixed-header");
+            a.preventDefault();
+            if ($(this).attr("aria-expanded") === "false") {
+                $(".navbar").removeClass("fixed-header");
+                $(".navbar-nav .nav-link")
+                    .addClass("text-white")
+                    .removeClass("text-black");
+            } else {
+                $(".navbar").addClass("fixed-header");
+                $(".navbar-nav .nav-link")
+                    .addClass("text-black")
+                    .removeClass("text-white");
+            }
         });
     };
 
     /******************** 3. NAV COLLAPSE ********************/
     PATH.MenuClose = function () {
-        $(".navbar-nav .nav-link").on("click", function () {
-            var toggle = $(".navbar-toggler").is(":visible");
-            if (toggle) {
-                $(".navbar-collapse").collapse("hide");
-            }
-        });
+        // $(".navbar-nav .nav-link").on("click", function () {
+        //     var toggle = $(".navbar-toggler").is(":visible");
+        //     if (toggle) {
+        //         $(".navbar-collapse").collapse("hide");
+        //     }
+        // });
     };
 
     /******************** 4. NAV SMOOTH SCROLL ********************/
@@ -79,15 +90,21 @@ var PATH = {};
 
     /******************** 5. FIXED HEADER ********************/
     PATH.HeaderFixed = function () {
-        var varHeaderFix = $(window).scrollTop() >= 60,
-            $navbar = $(".navbar");
+        var varHeaderFix = $(window).scrollTop() >= 60;
+        var $navbar = $(".navbar");
+        var $a = $(".navbar a.nav-link");
         var $buttonHotline = $("#button-hotline");
-        if (varHeaderFix) {
-            $navbar.addClass("fixed-header");
-            $buttonHotline.show();
-        } else {
+        if (
+            !varHeaderFix &&
+            $(".navbar-toggler").attr("aria-expanded") !== "true"
+        ) {
             $buttonHotline.hide();
+            $a.addClass("text-white").removeClass("text-black");
             $navbar.removeClass("fixed-header");
+        } else {
+            $navbar.addClass("fixed-header");
+            $a.addClass("text-black").removeClass("text-white");
+            $buttonHotline.show();
         }
     };
     /******************** 6. HERO SLIDER  ********************/
@@ -366,10 +383,10 @@ var PATH = {};
 
     /* Document ready function */
     $(function () {
-        PATH.textAnimation(),
-            PATH.MenuClose(),
-            PATH.HeaderScroll(),
-            PATH.HeaderSticky();
+        PATH.textAnimation();
+        PATH.MenuClose();
+        PATH.HeaderScroll();
+        PATH.HeaderSticky();
         PATH.videoModal();
         PATH.causesLightBox();
         PATH.causesProgress();
@@ -383,7 +400,8 @@ var PATH = {};
     });
 
     /* Window on load function */
-    $(window).on("load", function () {
+    document.addEventListener("livewire:navigated", function () {
+        console.log("Livewire navigated, reloading CSS...");
         PATH.sliderTestimonial();
         PATH.sliderVolunteers();
         PATH.heroSlider();

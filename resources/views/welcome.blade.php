@@ -1,1 +1,1 @@
-@include('page.home.home')
+@include('page.home.index')

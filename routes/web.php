@@ -1,10 +1,16 @@
 <?php
 
-use App\Http\Controllers\ContactController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::resource('/blog', BlogController::class)->name('*', 'blog');
 
-Route::post('/send-mail', [ContactController::class, 'sendMail'])->name('send.mail');
+// Route::resource('/faq', '');
+// Route::resource('/program', '');
+// Route::resource('/jumber', '');
+// Route::resource('/khitan', '');
+// Route::resource('/donation', '');
+// Route::resource('/ambulan', '');
+// Route::resource('/dakwah', '');

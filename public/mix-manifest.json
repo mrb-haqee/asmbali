@@ -1,17 +1,4 @@
 {
     "/css/plugins.css": "/css/plugins.css",
-    "/css/plugins.min.css": "/css/plugins.min.css",
-    "/css/custom.css": "/css/custom.css",
-    "/css/colors/blue.css": "/css/colors/blue.css",
-    "/css/colors/brown.css": "/css/colors/brown.css",
-    "/css/colors/gold.css": "/css/colors/gold.css",
-    "/css/colors/green.css": "/css/colors/green.css",
-    "/css/colors/light-blue.css": "/css/colors/light-blue.css",
-    "/css/colors/light-green.css": "/css/colors/light-green.css",
-    "/css/colors/light-orange.css": "/css/colors/light-orange.css",
-    "/css/colors/light-purple.css": "/css/colors/light-purple.css",
-    "/css/colors/olive.css": "/css/colors/olive.css",
-    "/css/colors/orange.css": "/css/colors/orange.css",
-    "/css/colors/pink.css": "/css/colors/pink.css",
-    "/css/colors/purple.css": "/css/colors/purple.css"
+    "/css/plugins.min.css": "/css/plugins.min.css"
 }

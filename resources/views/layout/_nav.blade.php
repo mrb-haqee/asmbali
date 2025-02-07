@@ -4,33 +4,24 @@
             <a class="navbar-brand" href="#" class="d-flex">
                 <img id="icon-asm" src="{{ asset('img/logos/asm-text.png') }}" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCodeply">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCodeply">
                 <i class="icofont-navigation-menu"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCodeply">
+            <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarCodeply">
                 <ul class="nav navbar-nav ml-auto">
                     <li>
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="{{ route('home') }}#home" wire:navigate preserve-state>Home</a>
+                        {{-- <a class="nav-link" href="{{ route('home') }}#home"
+                            @if (!request()->routeIs('home'))  @endif>Home</a> --}}
                     </li>
-                    <li><a class="nav-link" href="#about">Tentang</a></li>
-                    <li><a class="nav-link" href="#programs">Program</a></li>
-                    <li><a class="nav-link" href="#gallery">Gallery</a></li>
-                    <li><a class="nav-link" href="#donatur">Donatur</a></li>
-                    <li><a class="nav-link" href="#volunteers">Pengurus</a></li>
-                    <li>
-                        <a class="nav-link" href="#blog">Blog</a>
-                        {{-- <span class="sub-menu-toggle" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false"><i class="icofont-rounded-down"></i></span>
-                        <ul class="sub-menu">
-                            <li><a href="blog-full.html">Blog Full</a></li>
-                            <li><a href="blog-2-col.html">Blog 2 col</a></li>
-                            <li><a href="blog-3-col.html">Blog 3 col</a></li>
-                            <li><a href="single-blog.html">Single blog</a></li>
-                            <li><a href="single-left-sidebar.html">Single left sidebar</a></li>
-                            <li><a href="single-right-sidebar.html">Single right sidebar</a></li>
-                        </ul> --}}
+                    <li><a class="nav-link" href="{{ route('home') }}#tentang" wire:navigate preserve-state>Tentang</a>
                     </li>
-                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                    <li><a class="nav-link" href="{{ route('home') }}#program" wire:navigate>Program</a></li>
+                    <li><a class="nav-link" href="{{ route('home') }}#gallery" wire:navigate>Gallery</a></li>
+                    <li><a class="nav-link" href="{{ route('home') }}#donatur" wire:navigate>Donatur</a></li>
+                    <li><a class="nav-link" href="{{ route('home') }}#pengurus" wire:navigate>Pengurus</a></li>
+                    <li><a class="nav-link" href="{{ route('home') }}#contact" wire:navigate>Contact</a></li>
+                    <li><a class="nav-link" href="{{ route('blog.index') }}" wire:navigate>Blog</a></li>
                 </ul>
             </div>
         </div>
