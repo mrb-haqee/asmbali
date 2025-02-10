@@ -12,7 +12,7 @@
                 'detail' => 'Berbuat untuk Kemaslahatan Ummat',
             ],
             [
-                'bg' => 'img/hero/camping.jpg',
+                'bg' => 'img/hero/tukik.jpg',
                 'title' => 'Ajang Silaturahmi Muslim Bali',
                 'detail' => 'Berbuat untuk Kemaslahatan Ummat',
             ],

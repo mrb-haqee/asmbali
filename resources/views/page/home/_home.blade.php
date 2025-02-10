@@ -18,7 +18,7 @@
                                     <h2 class="text-capitalize m-35px-tb tlt">{{ $row['detail'] }}</h2>
                                     <div class="hero-btn-wrapper">
                                         <a href="#contact" class="btn btn-default btn-default-outline">Contact us</a>
-                                        <a class="btn btn-default" href="#">Donate now</a>
+                                        {{-- <a class="btn btn-default" href="#">Donate now</a> --}}
                                     </div>
                                 </div>
                             </div>
