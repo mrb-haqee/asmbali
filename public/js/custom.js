@@ -64,10 +64,11 @@ var PATH = {};
     /******************** 3. NAV COLLAPSE ********************/
     PATH.MenuClose = function () {
         $(".navbar-nav .nav-link").on("click", function () {
-            // var toggle = $(".navbar-toggler").is(":visible");
-            // if (toggle) {
-            //     $(".navbar-collapse").collapse("hide");
-            // }
+            var toggle = $(".navbar-toggler").is(":visible");
+            if (toggle) {
+                $(".navbar-collapse").collapse("hide");
+                $(".navbar-toggler").toggleClass("active");
+            }
         });
     };
 
