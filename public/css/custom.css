@@ -517,8 +517,6 @@ hr {
 .navbar-toggler i {
     transition: transform 0.3s ease, opacity 0.3s ease;
     position: absolute;
-    top: 25px;
-    right: 30px;
 }
 
 .navbar-toggler .icofont-navigation-menu {
@@ -1695,7 +1693,7 @@ ol.breadcrumb li {
 }
 
 .breadcrumb-item a {
-    color: #000;
+    color: whitesmoke;
 }
 .breadcrumb-item a:hover {
     color: #38c695;
@@ -1704,7 +1702,7 @@ ol.breadcrumb li {
     color: #e1e1e1;
 }
 .breadcrumb-item.active {
-    color: #6c757d;
+    color: white;
 }
 .pr-pagenation .page-link {
     border-color: #e1e1e1;
@@ -2033,6 +2031,12 @@ a.btn.btn-readmore:hover {
 /* Tablet Layout: 768px. */
 
 @media only screen and (min-width: 768px) and (max-width: 990px) {
+    .navbar-toggler i {
+        top: 35px;
+        right: 40px;
+        scale: 1.2;
+    }
+
     .promo-video h1 {
         font-size: 50px;
     }
@@ -2073,6 +2077,12 @@ a.btn.btn-readmore:hover {
         display: none;
     }
 
+    .navbar-toggler i {
+        top: 25px;
+        right: 30px;
+        scale: .8;
+    }
+
     h1 {
         font-size: 30px;
     }
@@ -2086,7 +2096,7 @@ a.btn.btn-readmore:hover {
     h4 {
         font-size: 15px;
     }
-    h5 {
+    h5, .nav-link {
         font-size: 14px;
     }
     h6 {

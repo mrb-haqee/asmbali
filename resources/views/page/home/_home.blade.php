@@ -9,7 +9,7 @@
                             <div class="row full-height align-items-center" style="height: 100vh;">
                                 <div class="col p-100px-t p-50px-b slider-text text-center">
                                     <div class="d-flex justify-content-center align-content-center mb-3 fade-in">
-                                        <img src="{{ asset('img/logos/asm.png') }}" alt="logo asm">
+                                        <img src="{{ asset('img/logos/asm.png') }}" alt="logo asm" class="position-relative">
                                     </div>
                                     <h4 class="tlt1">{{ $row['title'] }}</h4>
                                     <div class="divider-circle mt-4"></div>

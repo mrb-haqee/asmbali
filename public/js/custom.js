@@ -32,7 +32,7 @@ var PATH = {};
     /******************** 1. PRELOADER ********************/
     PATH.preLoader = function () {
         $(".preloader").fadeOut();
-        $("#preloader-wrap").delay(1000).fadeOut("slow");
+        $("#preloader-wrap").fadeOut("slow");
     };
 
     /******************** 2. ADD CLASS HEADER ********************/
@@ -385,8 +385,16 @@ var PATH = {};
         }
     };
 
-    /* Document ready function */
-    $(function () {
+    /* Window on scroll function */
+    $(window).on("scroll", function () {
+        PATH.HeaderFixed();
+    });
+
+    /* Window on load function */
+    document.addEventListener("livewire:navigated", function () {
+        console.log("Livewire navigated, reloading CSS...");
+        PATH.preLoader();
+
         PATH.textAnimation();
         PATH.MenuClose();
         PATH.HeaderScroll();
@@ -396,23 +404,14 @@ var PATH = {};
         PATH.causesProgress();
         PATH.GalleryLightBox();
         PATH.contactForm();
-    });
 
-    /* Window on scroll function */
-    $(window).on("scroll", function () {
-        PATH.HeaderFixed();
-    });
-
-    /* Window on load function */
-    document.addEventListener("livewire:navigated", function () {
-        console.log("Livewire navigated, reloading CSS...");
         PATH.sliderTestimonial();
         PATH.sliderVolunteers();
         PATH.heroSlider();
         PATH.causesSlider();
         PATH.GalleryFilter();
         PATH.counterUp();
-        PATH.preLoader();
+
         PATH.HeaderFixed();
     });
 })(jQuery);

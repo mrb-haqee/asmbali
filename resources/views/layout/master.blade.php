@@ -36,45 +36,33 @@
     <!-- ========== Header Nav End ========== -->
 
     <!-- ========== Content Start ========== -->
-    @yield('content')
+    {{-- @yield('content') --}}
+    {{ $slot }}
     <!-- ========== Content End ========== -->
 
     <!-- ========== Header Footer Start ========== -->
     @include('layout._footer')
     <!-- ========== Header Footer End ========== -->
 
-    <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.textillate.js') }}"></script>
-    <script src="{{ asset('js/jquery.lettering.js') }}"></script>
-    <script src="{{ asset('js/jquery.fittext.js') }}"></script>
-    <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
-    <script src="{{ asset('js/modal-video.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.waypoints.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.counterup.min.js') }}"></script>
-    <script src="{{ asset('js/isotope.pkgd.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.ajaxchimp.min.js') }}"></script>
-    <script src="{{ asset('js/swiper.min.js') }}"></script>
-    <script src="{{ asset('js/aos.js') }}"></script>
-    <script src="{{ asset('js/custom.js') }}?v={{ filemtime(public_path('js/custom.js')) }}"></script>
-    @livewireScripts(['turbo' => true])
-
+    <script data-navigate-once src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
+    <script data-navigate-once src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script data-navigate-once src="{{ asset('js/jquery.textillate.js') }}"></script>
+    <script data-navigate-once src="{{ asset('js/jquery.lettering.js') }}"></script>
+    <script data-navigate-once src="{{ asset('js/jquery.fittext.js') }}"></script>
+    <script data-navigate-once src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
+    <script data-navigate-once src="{{ asset('js/modal-video.min.js') }}"></script>
+    <script data-navigate-once src="{{ asset('js/jquery.waypoints.min.js') }}"></script>
+    <script data-navigate-once src="{{ asset('js/jquery.counterup.min.js') }}"></script>
+    <script data-navigate-once src="{{ asset('js/isotope.pkgd.min.js') }}"></script>
+    <script data-navigate-once src="{{ asset('js/jquery.ajaxchimp.min.js') }}"></script>
+    <script data-navigate-once src="{{ asset('js/swiper.min.js') }}"></script>
+    <script data-navigate-once src="{{ asset('js/aos.js') }}"></script>
+    <script data-navigate-once src="{{ asset('js/custom.js') }}?v={{ filemtime(public_path('js/custom.js')) }}"></script>
     <script>
         AOS.init();
     </script>
-    <script>
-        document.addEventListener("livewire:navigated", function() {
-            console.log("Livewire navigated - Event detected!", new Date());
-        });
+    @livewireScripts
 
-        document.addEventListener("DOMContentLoaded", function() {
-            console.log("DOM fully loaded");
-        });
-
-        window.addEventListener("load", function() {
-            console.log("Page fully loaded");
-        });
-    </script>
 
 
 
@@ -86,7 +74,7 @@
     <!-- =========================================================
   STYLE SWITCHER | ONLY FOR DEMO NOT INCLUDED IN MAIN FILES
  ============================================================== -->
-    <script type="text/javascript" src="{{ asset('demo/demo.js') }}"></script>
+    {{-- <script type="text/javascript" src="{{ asset('demo/demo.js') }}"></script> --}}
     <div class="demo-style-switch" id="switch-style">
         <a id="toggle-switcher" class="switch-button" title="Change Styles">
             <span class="icofont-ui-settings"></span>

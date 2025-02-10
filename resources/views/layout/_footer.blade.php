@@ -94,10 +94,7 @@
             <div class="row">
                 <div class="col text-center">
                     <p class="copyright-text">
-                        Copyright &copy; <a href="#">ASM BALI</a>
-                        <script>
-                            document.write(new Date().getFullYear());
-                        </script>
+                        Copyright &copy; <a href="{{ route('home') }}">ASM BALI</a> {{ date('Y') }}
                     </p>
                 </div>
             </div>

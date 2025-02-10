@@ -1,5 +1,5 @@
 <header>
-    <nav class="navbar navbar-inverse navbar-expand-lg header-nav fixed-top light-header">
+    <nav class="navbar navbar-expand-lg header-nav fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#" class="d-flex">
                 <img id="icon-asm" src="{{ asset('img/logos/asm-text.png') }}" alt="">
@@ -9,23 +9,29 @@
                 <i class="icofont-navigation-menu"></i>
                 <i class="icofont-ui-close"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCodeply">
-                <ul class="nav navbar-nav ml-auto">
-                    <li>
-                        <a class="nav-link" href="{{ route('home') }}#home">Home</a>
-                        {{-- <a class="nav-link" href="{{ route('home') }}#home"
-                            @if (!request()->routeIs('home'))  @endif>Home</a> --}}
-                    </li>
-                    <li><a class="nav-link" href="{{ route('home') }}#tentang">Tentang</a>
-                    </li>
-                    <li><a class="nav-link" href="{{ route('home') }}#program">Program</a></li>
-                    <li><a class="nav-link" href="{{ route('home') }}#gallery">Gallery</a></li>
-                    <li><a class="nav-link" href="{{ route('home') }}#donatur">Donatur</a></li>
-                    <li><a class="nav-link" href="{{ route('home') }}#pengurus">Pengurus</a></li>
-                    <li><a class="nav-link" href="{{ route('home') }}#contact">Contact</a></li>
-                    <li><a class="nav-link" href="{{ route('blog.index') }}">Blog</a></li>
-                </ul>
-            </div>
+
+            @if (request()->routeIs('home'))
+                <div class="collapse navbar-collapse d-lg-flex justify-content-center" id="navbarCodeply">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li><a class="nav-link" href="#home">Home</a></li>
+                        <li><a class="nav-link" href="#tentang">Tentang</a></li>
+                        <li><a class="nav-link" href="#program">Program</a></li>
+                        <li><a class="nav-link" href="#gallery">Gallery</a></li>
+                        <li><a class="nav-link" href="#donatur">Donatur</a></li>
+                        <li><a class="nav-link" href="#pengurus">Pengurus</a></li>
+                        <li><a class="nav-link" href="#contact">Contact</a></li>
+                        <li><a class="nav-link" href="{{ route('blog.index') }}" wire:navigate>Blog</a></li>
+                    </ul>
+                </div>
+            @else
+                <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarCodeply">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li><a class="nav-link" href="{{ route('home') }}#home" wire:navigate>Home</a></li>
+                        <li><a class="nav-link" href="{{ route('blog.index') }}" wire:navigate>Blog</a></li>
+                    </ul>
+                </div>
+            @endif
+        </div>
         </div>
     </nav>
 </header>
