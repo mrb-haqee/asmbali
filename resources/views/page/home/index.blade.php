@@ -197,54 +197,12 @@
     @include('page.home._contact')
     <!-- ========== contact End ========== -->
 
-    @push('style')
-        <style>
-            .modal-dialog {
-                max-width: 800px;
-                margin: 30px auto;
-            }
-
-            .modal-body {
-                position: relative;
-                padding: 0px;
-            }
-
-            .close {
-                position: absolute;
-                right: -30px;
-                top: 0;
-                z-index: 999;
-                font-size: 2rem;
-                font-weight: normal;
-                color: #fff;
-                opacity: 1;
-            }
-        </style>
-    @endpush
-
-    @push('scripts')
-        <script>
-            $(document).ready(function() {
-                var $videoSrc;
-                $('.video-btn').click(function() {
-                    $videoSrc = $(this).data("src");
-                });
-
-                $('#myModal').on('shown.bs.modal', function(e) {
-                    $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-                })
-                $('#myModal').on('hide.bs.modal', function(e) {
-                    $("#video").attr('src', $videoSrc);
-                })
-            });
-        </script>
-    @endpush
 </x-default-layout>
 
 
 
 <!-- Modal Portrait -->
-<div class="modal fade" id="videoPortrait" tabindex="-1" role="dialog" aria-labelledby="videoPortraitLabel"
+<div class="modal fade modal-video" id="videoPortrait" tabindex="-1" role="dialog" aria-labelledby="videoPortraitLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 450px !important;">
         <div class="modal-content">
@@ -261,8 +219,8 @@
 </div>
 
 <!-- Modal Landscape -->
-<div class="modal fade" id="videoLandscape" tabindex="-1" role="dialog" aria-labelledby="videoLandscapeLabel"
-    aria-hidden="true">
+<div class="modal fade modal-video" id="videoLandscape" tabindex="-1" role="dialog"
+    aria-labelledby="videoLandscapeLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-body">

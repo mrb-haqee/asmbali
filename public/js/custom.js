@@ -136,7 +136,7 @@ var PATH = {};
 
         if ($tlt1.length) {
             $tlt1.textillate({
-                loop: true,
+                // loop: true,
                 in: {
                     effect: "fadeInDown",
                 },
@@ -148,7 +148,7 @@ var PATH = {};
         //
         if ($tlt.length) {
             $tlt.textillate({
-                loop: true,
+                // loop: true,  
                 in: {
                     effect: "fadeInRight",
                 },

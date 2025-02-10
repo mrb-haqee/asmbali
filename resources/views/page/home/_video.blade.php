@@ -42,25 +42,3 @@
 
     </div>
 </section>
-
-
-@push('style')
-    <style>
-        /* .ratio {
-            width: 100%;
-        } */
-
-        iframe {
-            width: 100%;
-            height: 100%;
-        }
-    </style>
-@endpush
-
-@push('scripts')
-    <script>
-        $(document).ready(function() {
-
-        });
-    </script>
-@endpush
