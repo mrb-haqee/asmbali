@@ -9,27 +9,30 @@
         </div>
         <div class="row mt-2">
             <div class="col-sm-4 text-center">
-                <button class="js-modal-btn video-promo" data-video-id="" autoplay>
+                <button class="video-btn video-promo" data-video-type="portrait"
+                    data-src="https://www.youtube.com/embed/SN7hFjnln18">
                     <div class="w-100 position-relative">
-                        <img src="img/bg/video-promo.jpg" alt="" class="rounded">
+                        <img src="https://img.youtube.com/vi/SN7hFjnln18/0.jpg" class="rounded">
                         <i class="icofont-video-alt text-white"></i>
                     </div>
                 </button>
                 <h6 class="text-white position-relative">Kurban</h6>
             </div>
             <div class="col-sm-4 text-center">
-                <button class="js-modal-btn video-promo" data-video-id="" autoplay>
+                <button class="video-btn video-promo" data-video-type="landscape"
+                    data-src="https://www.youtube.com/embed/SN7hFjnln18">
                     <div class="w-100 position-relative">
-                        <img src="img/bg/video-promo.jpg" alt="" class="rounded">
+                        <img src="https://img.youtube.com/vi/SN7hFjnln18/0.jpg" class="rounded">
                         <i class="icofont-video-alt text-white"></i>
                     </div>
                 </button>
                 <h6 class="text-white position-relative">Jumber</h6>
             </div>
             <div class="col-sm-4 text-center">
-                <button class="js-modal-btn video-promo" data-video-id="" autoplay>
+                <button class="video-btn video-promo" data-video-type="landscape"
+                    data-src="https://www.youtube.com/embed/SN7hFjnln18">
                     <div class="w-100 position-relative">
-                        <img src="img/bg/video-promo.jpg" alt="" class="rounded">
+                        <img src="https://img.youtube.com/vi/SN7hFjnln18/0.jpg" class="rounded">
                         <i class="icofont-video-alt text-white"></i>
                     </div>
                 </button>
@@ -39,3 +42,25 @@
 
     </div>
 </section>
+
+
+@push('style')
+    <style>
+        /* .ratio {
+            width: 100%;
+        } */
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+@endpush
+
+@push('scripts')
+    <script>
+        $(document).ready(function() {
+
+        });
+    </script>
+@endpush

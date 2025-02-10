@@ -7,12 +7,13 @@
         style="background-image:url({{ asset('img/bg/helping-hands.jpg') }}">
         <div class="container">
             <div class="row">
-                <div class="col text-center">
+                <div class="col text-center position-relative">
                     <h2 class="white-text">Blog left sidebar</h2>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Blog detail</li>
+                            <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('blog.index') }}">Blog</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Detail</li>
                         </ol>
                     </nav>
                 </div>

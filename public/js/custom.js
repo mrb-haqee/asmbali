@@ -161,10 +161,37 @@ var PATH = {};
 
     /******************** 8. VIDEO LIGHTBOX ********************/
     PATH.videoModal = function () {
-        var $jsmodal = $(".js-modal-btn");
-        if ($jsmodal.length) {
-            $jsmodal.modalVideo();
-        }
+        // var $jsmodal = $(".js-modal-btn");
+        // if ($jsmodal.length) {
+        //     $jsmodal.modalVideo();
+        // }
+
+        $(".video-btn").click(function () {
+            var videoSrc = $(this).data("src");
+            var videoType = $(this).data("video-type");
+
+            if (videoType === "portrait") {
+                $("#iframePortrait").attr(
+                    "src",
+                    videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+                );
+                $("#videoPortrait").modal("show");
+            } else {
+                $("#iframeLandscape").attr(
+                    "src",
+                    videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+                );
+                $("#videoLandscape").modal("show");
+            }
+        });
+
+        $("#videoPortrait").on("hide.bs.modal", function () {
+            $("#iframePortrait").attr("src", "");
+        });
+
+        $("#videoLandscape").on("hide.bs.modal", function () {
+            $("#iframeLandscape").attr("src", "");
+        });
     };
 
     /******************** 9. CAUSES LIGHTBOX ********************/
