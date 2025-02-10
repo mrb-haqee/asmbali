@@ -409,5 +409,6 @@ var PATH = {};
         PATH.GalleryFilter();
         PATH.counterUp();
         PATH.preLoader();
+        PATH.HeaderFixed();
     });
 })(jQuery);
