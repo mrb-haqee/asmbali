@@ -37,30 +37,38 @@ var PATH = {};
 
     /******************** 2. ADD CLASS HEADER ********************/
     PATH.HeaderSticky = function () {
-        $(".navbar-toggler").on("click", function (a) {
-            a.preventDefault();
-            if ($(this).attr("aria-expanded") === "false") {
-                $(".navbar").removeClass("fixed-header");
-                $(".navbar-nav .nav-link")
-                    .addClass("text-white")
-                    .removeClass("text-black");
-            } else {
-                $(".navbar").addClass("fixed-header");
-                $(".navbar-nav .nav-link")
-                    .addClass("text-black")
-                    .removeClass("text-white");
+        $(".navbar-toggler").on("click", function (e) {
+            e.preventDefault();
+            $(this).toggleClass("active");
+
+            var isScrolled = $(window).scrollTop() >= 60;
+            var isExpanded = $(this).attr("aria-expanded") === "true";
+
+            var $navbar = $(".navbar");
+            var $navLinks = $(".navbar-nav .nav-link");
+
+            if (!isScrolled) {
+                if (isExpanded) {
+                    $navbar.addClass("fixed-header");
+                } else {
+                    $navbar.removeClass("fixed-header");
+                }
             }
+
+            $navLinks
+                .toggleClass("text-white", !isScrolled && !isExpanded)
+                .toggleClass("text-black", isScrolled || isExpanded);
         });
     };
 
     /******************** 3. NAV COLLAPSE ********************/
     PATH.MenuClose = function () {
-        // $(".navbar-nav .nav-link").on("click", function () {
-        //     var toggle = $(".navbar-toggler").is(":visible");
-        //     if (toggle) {
-        //         $(".navbar-collapse").collapse("hide");
-        //     }
-        // });
+        $(".navbar-nav .nav-link").on("click", function () {
+            // var toggle = $(".navbar-toggler").is(":visible");
+            // if (toggle) {
+            //     $(".navbar-collapse").collapse("hide");
+            // }
+        });
     };
 
     /******************** 4. NAV SMOOTH SCROLL ********************/
@@ -90,22 +98,17 @@ var PATH = {};
 
     /******************** 5. FIXED HEADER ********************/
     PATH.HeaderFixed = function () {
-        var varHeaderFix = $(window).scrollTop() >= 60;
+        var isScrolled = $(window).scrollTop() >= 60;
         var $navbar = $(".navbar");
-        var $a = $(".navbar a.nav-link");
+        var $navLinks = $(".navbar a.nav-link");
         var $buttonHotline = $("#button-hotline");
-        if (
-            !varHeaderFix &&
-            $(".navbar-toggler").attr("aria-expanded") !== "true"
-        ) {
-            $buttonHotline.hide();
-            $a.addClass("text-white").removeClass("text-black");
-            $navbar.removeClass("fixed-header");
-        } else {
-            $navbar.addClass("fixed-header");
-            $a.addClass("text-black").removeClass("text-white");
-            $buttonHotline.show();
-        }
+        var isExpanded = $(".navbar-toggler").attr("aria-expanded") === "true";
+
+        $buttonHotline.toggle(isScrolled || isExpanded);
+        $navLinks
+            .toggleClass("text-white", !isScrolled && !isExpanded)
+            .toggleClass("text-black", isScrolled || isExpanded);
+        $navbar.toggleClass("fixed-header", isScrolled || isExpanded);
     };
     /******************** 6. HERO SLIDER  ********************/
     PATH.heroSlider = function () {

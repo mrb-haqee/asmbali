@@ -14,7 +14,7 @@
     <link rel="icon" href="favicon.ico" />
     <!---IcoFont Icon font-->
     <link rel="stylesheet" href="{{ asset('css/plugins.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}?v={{ filemtime(public_path('css/custom.css')) }}">
     <link rel="stylesheet" href="{{ asset('demo/demo.css') }}">
     <link rel="stylesheet" href="{{ asset('css/colors/orange.css') }}" id="color-switch">
 
@@ -44,7 +44,6 @@
     <!-- ========== Header Footer End ========== -->
 
     <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
-    {{-- <script src="{{ asset('js/jquery-migrate.min.js') }}"></script> --}}
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/jquery.textillate.js') }}"></script>
     <script src="{{ asset('js/jquery.lettering.js') }}"></script>
@@ -56,8 +55,8 @@
     <script src="{{ asset('js/isotope.pkgd.min.js') }}"></script>
     <script src="{{ asset('js/jquery.ajaxchimp.min.js') }}"></script>
     <script src="{{ asset('js/swiper.min.js') }}"></script>
-    <script src="{{ asset('js/custom.js') }}"></script>
     <script src="{{ asset('js/aos.js') }}"></script>
+    <script src="{{ asset('js/custom.js') }}?v={{ filemtime(public_path('js/custom.js')) }}"></script>
     @livewireScripts(['turbo' => true])
 
     <script>
@@ -137,7 +136,5 @@
         </div>
     </div>
 </body>
-
-<!-- Mirrored from themeatelier.net/site-templates/prottasha/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 31 Jan 2025 06:15:55 GMT -->
 
 </html>
