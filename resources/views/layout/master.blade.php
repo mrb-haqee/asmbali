@@ -74,7 +74,7 @@
     <!-- =========================================================
   STYLE SWITCHER | ONLY FOR DEMO NOT INCLUDED IN MAIN FILES
  ============================================================== -->
-    {{-- <script type="text/javascript" src="{{ asset('demo/demo.js') }}"></script> --}}
+    <script type="text/javascript" src="{{ asset('demo/demo.js') }}"></script>
     <div class="demo-style-switch" id="switch-style">
         <a id="toggle-switcher" class="switch-button" title="Change Styles">
             <span class="icofont-ui-settings"></span>
