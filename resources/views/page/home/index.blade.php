@@ -204,31 +204,31 @@
 
     @push('scripts')
         <script>
-            // var map;
+            var map;
 
-            // function initMap() {
-            //     // Coordinates for ASM Bali
-            //     var location = {
-            //         lat: -8.6723405,
-            //         lng: 115.1873575
-            //     };
+            function initMap() {
+                // Coordinates for ASM Bali
+                var location = {
+                    lat: -8.6723405,
+                    lng: 115.1873575
+                };
 
-            //     // Initialize the map
-            //     map = new google.maps.Map(document.getElementById('map'), {
-            //         center: location,
-            //         zoom: 19 // Adjust the zoom level as needed
-            //     });
+                // Initialize the map
+                map = new google.maps.Map(document.getElementById('map'), {
+                    center: location,
+                    zoom: 19 // Adjust the zoom level as needed
+                });
 
-            //     // Add a marker at the location
-            //     var marker = new google.maps.Marker({
-            //         position: location,
-            //         map: map,
-            //         title: 'ASM Bali'
-            //     });
-            // }
+                // Add a marker at the location
+                var marker = new google.maps.Marker({
+                    position: location,
+                    map: map,
+                    title: 'ASM Bali'
+                });
+            }
         </script>
-        {{-- <script src="https://cdn.jsdelivr.net/gh/somanchiu/Keyless-Google-Maps-API@v6.8/mapsJavaScriptAPI.js" async defer>
-        </script> --}}
-       
+        <script src="https://cdn.jsdelivr.net/gh/somanchiu/Keyless-Google-Maps-API@v6.8/mapsJavaScriptAPI.js" async defer>
+        </script>
+
     @endpush
 </x-default-layout>
