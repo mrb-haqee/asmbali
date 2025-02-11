@@ -12,12 +12,12 @@
                 'detail' => 'Berbuat untuk Kemaslahatan Ummat',
             ],
             [
-                'bg' => 'img/hero/tukik.jpg',
+                'bg' => 'img/hero/kurban.jpg',
                 'title' => 'Ajang Silaturahmi Muslim Bali',
                 'detail' => 'Berbuat untuk Kemaslahatan Ummat',
             ],
             [
-                'bg' => 'img/hero/kurban.jpg',
+                'bg' => 'img/hero/tukik.jpg',
                 'title' => 'Ajang Silaturahmi Muslim Bali',
                 'detail' => 'Berbuat untuk Kemaslahatan Ummat',
             ],
@@ -39,7 +39,7 @@
 
         $dataProgram = [
             [
-                'icon' => 'icofont-search-2',
+                'icon' => 'icofont-food-basket',
                 'name' => "Jum'at Berkah",
             ],
             [
@@ -47,23 +47,22 @@
                 'name' => 'Sembako',
             ],
             [
-                'icon' => 'icofont-slidshare',
+                'icon' => 'icofont-ambulance-cross',
                 'name' => 'Ambulan',
             ],
             [
-                'icon' => 'icofont-simple-smile',
+                'icon' => 'icofont-operation-theater',
                 'name' => 'Khitan Gratis',
             ],
             [
-                'icon' => 'icofont-simple-smile',
+                'icon' => 'icofont-users-social',
                 'name' => 'Sosial Dakwah',
             ],
             [
-                'icon' => 'icofont-simple-smile',
+                'icon' => 'icofont-read-book',
                 'name' => 'Rumah Tahfidz',
             ],
         ];
-
     @endphp
     @include('page.home._program')
     <!-- ========== Program Unggulan End ========== -->

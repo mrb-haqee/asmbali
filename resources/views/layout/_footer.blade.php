@@ -104,7 +104,7 @@
 
     <!-- START FIXED BUTTON WA -->
     <a id="button-hotline" href="https://wa.me/6281353262890" target="_blank" data-aos="fade-down">
-        <div class="d-flex align-items-center justify-content-center p-lg-3 p-sm-2 shadow-sm bg-white">
+        <div class="d-flex align-items-center justify-content-center p-lg-3 p-2 shadow-sm bg-white">
             <img src="{{ asset('img/logos/wa.png') }}" alt="WhatsApp">
             <p class="mb-0 text-center ms-2">Ada yang bisa kami bantu?</p>
         </div>

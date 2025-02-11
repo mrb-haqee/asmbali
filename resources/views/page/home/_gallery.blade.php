@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-sm-8 offset-sm-2">
                 <div class="section-title text-center m-60px-b">
-                    <h2>Our gallery</h2>
+                    <h2>Galeri</h2>
                     <div class="divider-circle mx-auto"></div>
                     <p>Savings her pleased are several started females met. Short her not among being any. Thing of
                         judge
