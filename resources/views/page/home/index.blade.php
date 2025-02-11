@@ -41,26 +41,32 @@
             [
                 'icon' => 'icofont-food-basket',
                 'name' => "Jum'at Berkah",
+                'redirect' => 'jumber',
             ],
             [
                 'icon' => 'icofont-holding-hands',
                 'name' => 'Sembako',
+                'redirect' => 'sembako',
             ],
             [
                 'icon' => 'icofont-ambulance-cross',
                 'name' => 'Ambulan',
+                'redirect' => 'ambulan',
             ],
             [
                 'icon' => 'icofont-operation-theater',
                 'name' => 'Khitan Gratis',
+                'redirect' => 'khitan',
             ],
             [
                 'icon' => 'icofont-users-social',
                 'name' => 'Sosial Dakwah',
+                'redirect' => 'sosial-dakwah',
             ],
             [
                 'icon' => 'icofont-read-book',
                 'name' => 'Rumah Tahfidz',
+                'redirect' => 'rumah-tahfidz',
             ],
         ];
     @endphp
@@ -210,7 +216,8 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <div class="ratio" style="--bs-aspect-ratio: 178%;"> <!-- 3:4 Aspect Ratio -->
-                    <iframe src="" id="iframePortrait" allowscriptaccess="always" allow="autoplay"></iframe>
+                    <iframe src="" id="iframePortrait" allowscriptaccess="always" allow="autoplay"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -227,7 +234,8 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <div class="ratio ratio-16x9">
-                    <iframe src="" id="iframeLandscape" allowscriptaccess="always" allow="autoplay"></iframe>
+                    <iframe src="" id="iframeLandscape" allowscriptaccess="always" allow="autoplay"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </div>

@@ -17,7 +17,7 @@
                         maxime veniam? Inventore exercitationem ad a illum temporibus id debitis nemo, natus sint,
                         sed odio quia dolore repudiandae!</p>
 
-                    <a class="btn btn-default" href="#">DETAIL</a>
+                    <a class="btn btn-default" href="{{ route('tentang-kami') }}" wire:navigate>DETAIL</a>
 
                 </div>
             </div>

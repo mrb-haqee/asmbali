@@ -13,13 +13,13 @@
             @if (request()->routeIs('home'))
                 <div class="collapse navbar-collapse d-lg-flex justify-content-center" id="navbarCodeply">
                     <ul class="nav navbar-nav ml-auto">
-                        <li><a class="nav-link" href="#home">Home</a></li>
+                        {{-- <li><a class="nav-link" href="#home">Home</a></li> --}}
                         <li><a class="nav-link" href="#tentang">Tentang</a></li>
                         <li><a class="nav-link" href="#program">Program</a></li>
                         <li><a class="nav-link" href="#gallery">Gallery</a></li>
                         <li><a class="nav-link" href="#donatur">Donatur</a></li>
                         <li><a class="nav-link" href="#pengurus">Pengurus</a></li>
-                        <li><a class="nav-link" href="#contact">Contact</a></li>
+                        <li><a class="nav-link" href="#contact">Maps</a></li>
                         <li><a class="nav-link" href="{{ route('blog.index') }}" wire:navigate>Blog</a></li>
                     </ul>
                 </div>

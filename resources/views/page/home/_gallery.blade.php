@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12 text-center">
                 <ul class="gallery-filter text-center">
                     <li><a class="btn btn-default btn-small active" href="#" data-filter="*">All</a></li>
                     <li><a class="btn btn-default btn-small" href="#" data-filter=".kurban">Kurban</a>
@@ -21,8 +21,13 @@
                     </li>
                     <li><a class="btn btn-default btn-small" href="#" data-filter=".sembako">Sembako</a></li>
                     <li><a class="btn btn-default btn-small" href="#" data-filter=".event">Event</a></li>
+                    <li>
+                        <button class="btn btn-default btn-small" wire:navigate
+                            onclick="window.location.href='{{ route('galeri') }}'">
+                            <i class="fa fa-list"></i>
+                        </button>
+                    </li>
                 </ul>
-                <!--/#gallery-filter-->
             </div>
         </div>
         <div class="row">

@@ -89,7 +89,7 @@ var PATH = {};
                         {
                             scrollTop: target.offset().top - 65,
                         },
-                        1000
+                        10
                     );
                     return false;
                 }
@@ -148,7 +148,7 @@ var PATH = {};
         //
         if ($tlt.length) {
             $tlt.textillate({
-                // loop: true,  
+                // loop: true,
                 in: {
                     effect: "fadeInRight",
                 },
@@ -419,7 +419,6 @@ var PATH = {};
 
     /* Window on load function */
     document.addEventListener("livewire:navigated", function () {
-        console.log("Livewire navigated, reloading CSS...");
         PATH.preLoader();
 
         PATH.textAnimation();
@@ -440,5 +439,6 @@ var PATH = {};
         PATH.counterUp();
 
         PATH.HeaderFixed();
+        AOS.init();
     });
 })(jQuery);

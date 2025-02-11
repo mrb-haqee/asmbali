@@ -127,5 +127,10 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <a class="btn btn-default w-25" href="{{ route('donatur') }}" wire:navigate>All</a>
+            </div>
+        </div>
     </div>
 </section>

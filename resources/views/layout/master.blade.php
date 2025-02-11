@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<!-- Mirrored from themeatelier.net/site-templates/prottasha/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 31 Jan 2025 06:15:31 GMT -->
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    @yield('seo_config')
+
+
     <!-- Page Title -->
     <title>@yield('title')</title>
     <!-- Favicon -->
@@ -29,20 +31,8 @@
         <div class="preloader"></div>
     </div>
 
-
-
-    <!-- ========== Header Nav Start ========== -->
-    @include('layout._nav')
-    <!-- ========== Header Nav End ========== -->
-
-    <!-- ========== Content Start ========== -->
-    {{-- @yield('content') --}}
-    {{ $slot }}
-    <!-- ========== Content End ========== -->
-
-    <!-- ========== Header Footer Start ========== -->
-    @include('layout._footer')
-    <!-- ========== Header Footer End ========== -->
+    @yield('content')
+    @yield('footer')
 
     <script data-navigate-once src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
     <script data-navigate-once src="{{ asset('js/bootstrap.min.js') }}"></script>
@@ -58,14 +48,7 @@
     <script data-navigate-once src="{{ asset('js/swiper.min.js') }}"></script>
     <script data-navigate-once src="{{ asset('js/aos.js') }}"></script>
     <script data-navigate-once src="{{ asset('js/custom.js') }}?v={{ filemtime(public_path('js/custom.js')) }}"></script>
-    <script>
-        AOS.init();
-    </script>
     @livewireScripts
-
-
-
-
 
     <!--end::Custom Javascript-->
     @stack('scripts')

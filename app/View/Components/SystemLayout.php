@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class DefaultLayout extends Component
+class SystemLayout extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class DefaultLayout extends Component
     public function render()
     {
         // See also starterkit/app/Core/Bootstrap/BootstrapDefault.php
-        return view('layout._default');
+        return view('layout._system');
     }
 }

@@ -19,7 +19,7 @@
                     <div
                         class="process-item text-center col-md-{{ count($dataProgram) > 4 ? 2 : 3 }} col-sm-6 sm-m-15px-tb">
                         {{-- <a href="{{ route('') }}"> --}}
-                        <a href="#">
+                        <a href="{{ url($row['redirect']) }}" wire:navigate>
                             <div class="process-circle">
                                 <p>{{ $i + 1 }}</p>
                             </div>

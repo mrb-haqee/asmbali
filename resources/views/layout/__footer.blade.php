@@ -16,13 +16,13 @@
 
                         <div class="single-widget col-md-5 col-sm-6">
                             <h3>TENTANG</h3>
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Donors</a></li>
-                                <li><a href="#">Volunteers</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Contact us</a></li>
+                            <ul class="recent-post">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#tentang">Tentang</a></li>
+                                <li><a href="#program">Program</a></li>
+                                <li><a href="#layanan">Layanan</a></li>
+                                <li><a href="{{ route('blog.index') }}" wire:navigate>Blog</a></li>
+                                <li><a href="https://wa.me/6281353262890" target="_blank">Whatsapp</a></li>
                             </ul>
                         </div>
                     </div>
@@ -40,14 +40,26 @@
                         </div>
 
                         <div class="single-widget col-md-6 col-sm-6">
+
                             <h3>IKUTI KAMI</h3>
-                            <div class="d-flex" style="gap: 10px">
-                                <a href="#"><i class="icofont-twitter"
-                                        style="font-size: 2rem; color: orangered;"></i></a>
-                                <a href="#"><i class="icofont-instagram"
-                                        style="font-size: 2rem; color: orangered;"></i></a>
-                                <a href="#"><i class="icofont-facebook"
-                                        style="font-size: 2rem; color: orangered;"></i></a>
+                            <div class="address-wrap bg-white rounded">
+                                <ul class="nav light-icon social-icons">
+                                    <li>
+                                        <a href="https://www.facebook.com/ajangsilaturahimmuslimbali/" target="_blank">
+                                            <i class="icofont-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/asm_bali/" target="_blank">
+                                            <i class="icofont-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/@ASMBali" target="_blank">
+                                            <i class="icofont-youtube"></i>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         {{-- <div class="single-widget col-md-6 col-sm-6">

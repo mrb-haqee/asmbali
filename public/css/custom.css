@@ -946,8 +946,8 @@ button {
     -webkit-box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.15);
     -o-box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.15);
     color: #38c695;
-    line-height: 120px;
     font-size: 40px;
+    padding-top: 40px;
 }
 .process-item:hover .icon-outer {
     background-color: #38c695;
@@ -1629,6 +1629,7 @@ button {
 }
 .address-wrap ul.social-icons li a {
     margin: 0px;
+    padding-top: 12px;
     border-color: #e1e1e1;
     display: inline-block;
     color: #38c695;
@@ -1665,10 +1666,11 @@ button {
     padding: 0;
     list-style: none;
 }
-.single-widget ul li {
+.single-widget ul.recent-post li {
     margin-bottom: 15px;
     position: relative;
     padding-left: 15px;
+    list-style: none;
 }
 .single-widget ul li:before {
     position: absolute;

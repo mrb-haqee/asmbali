@@ -21,16 +21,26 @@
                 <div class="address-wrap bg-white p-30px rounded">
                     <ul>
                         <li><span>Address:</span>Jl. Gn. Talang VI No.B-1, Padangsambian<br> Denpasar Barat</li>
-                        <li><span>Phone:</span><a href="#">+62</a></li>
+                        <li><span>Phone:</span><a href="https://wa.me/6281353262890">+6281353262890</a></li>
                         <li><span>Email:</span><a href="#">-</a></li>
                     </ul>
                     <h4>Connect our socials</h4>
                     <ul class="nav light-icon social-icons">
-                        <li><a href="#"><i class="icofont-twitter"></i></a></li>
-                        <li><a href="#"><i class="icofont-facebook"></i></a></li>
-                        <li><a href="#"><i class="icofont-pinterest"></i></a></li>
-                        <li><a href="#"><i class="icofont-linkedin"></i></a></li>
-                        <li><a href="#"><i class="icofont-instagram"></i></a></li>
+                        <li>
+                            <a href="https://www.facebook.com/ajangsilaturahimmuslimbali/" target="_blank">
+                                <i class="icofont-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/asm_bali/" target="_blank">
+                                <i class="icofont-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@ASMBali" target="_blank">
+                                <i class="icofont-youtube"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
