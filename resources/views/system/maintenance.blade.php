@@ -48,7 +48,7 @@
             <h1>503</h1>
             <h3>Sistem Sedang Dalam Perbaikan</h3>
             <p>Mohon maaf, sistem sedang diperbaiki. Silakan kembali lagi nanti.</p>
-            <a href="{{ route('home') }}" class="btn text-white" style="background-color: #fc5f45">Home</a>
+            <a href="{{ route('home') }}" class="btn text-white" style="background-color: #fc5f45" wire:navigate>Home</a>
         </div>
     </div>
 

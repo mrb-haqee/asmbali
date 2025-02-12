@@ -31,6 +31,10 @@ var PATH = {};
 
     /******************** 1. PRELOADER ********************/
     PATH.preLoader = function () {
+        $("#preloader-wrap").show();
+    };
+
+    PATH.preLoaderClose = function () {
         $(".preloader").fadeOut();
         $("#preloader-wrap").fadeOut("slow");
     };
@@ -135,7 +139,7 @@ var PATH = {};
             $tlt = $(".tlt");
 
         if ($tlt1.length) {
-            $tlt1.textillate({
+            $tlt1.textillate("destroy").textillate({
                 // loop: true,
                 in: {
                     effect: "fadeInDown",
@@ -147,7 +151,7 @@ var PATH = {};
         }
         //
         if ($tlt.length) {
-            $tlt.textillate({
+            $tlt.textillate("destroy").textillate({
                 // loop: true,
                 in: {
                     effect: "fadeInRight",
@@ -417,9 +421,16 @@ var PATH = {};
         PATH.HeaderFixed();
     });
 
-    /* Window on load function */
-    document.addEventListener("livewire:navigated", function () {
+    document.addEventListener("livewire:init", function () {
         PATH.preLoader();
+    });
+
+    document.addEventListener("livewire:navigating", () => {
+        PATH.preLoader();
+    });
+
+    document.addEventListener("livewire:navigated", function () {
+        PATH.preLoaderClose();
 
         PATH.textAnimation();
         PATH.MenuClose();

@@ -19,6 +19,11 @@
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}?v={{ filemtime(public_path('css/custom.css')) }}">
     <link rel="stylesheet" href="{{ asset('demo/demo.css') }}">
     <link rel="stylesheet" href="{{ asset('css/colors/orange.css') }}" id="color-switch">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.1/css/lightgallery-bundle.min.css"
+        integrity="sha512-fXavT4uA4L0uTUFHC275D7zd751ohbSuD6VUMc5JysWfmR+NxTI3w7etE7N9hjTETcoh0w0V+24Cel4xXnqvCg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css" />
 
     <!--end::Custom Javascript-->
     @stack('style')
@@ -47,6 +52,20 @@
     <script data-navigate-once src="{{ asset('js/jquery.ajaxchimp.min.js') }}"></script>
     <script data-navigate-once src="{{ asset('js/swiper.min.js') }}"></script>
     <script data-navigate-once src="{{ asset('js/aos.js') }}"></script>
+    <script data-navigate-once src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.1/lightgallery.min.js"
+        integrity="sha512-n82wdm8yNoOCDS7jsP6OEe12S0GHQV7jGSwj5V2tcNY/KM3z+oSDraUN3Hjf3EgOS9HWa4s3DmSSM2Z9anVVRQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script data-navigate-once src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.1/plugins/zoom/lg-zoom.min.js"
+        integrity="sha512-/nVDv6BV2iCSxA44tgJLUgxmURDKfoUYdpLah0Hz8s3rpWBMHeiSzrr7bplsMBf+mF2L//RXX2q/SE6B0UhCRA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script data-navigate-once
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.1/plugins/rotate/lg-rotate.min.js"
+        integrity="sha512-zdFPYhvPSLe+Zi5zs8upUUPvlYUGzNIpcjwTHbb8pSGkqBe1JKIwoBM8Kqd8j3WvpmueUIY9YgNys5ZcZfOBoQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.1/plugins/thumbnail/lg-thumbnail.min.js"
+        integrity="sha512-JJ6kXdrz+7LlX78Nb0TttHqmOXaRmfmzrL1Z1W33cILbfhCK6/4IdDdi9COOfeggOWJTbqVoNiC/j9fLCJGLlw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
     <script data-navigate-once src="{{ asset('js/custom.js') }}?v={{ filemtime(public_path('js/custom.js')) }}"></script>
     @livewireScripts
 

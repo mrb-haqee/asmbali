@@ -9,7 +9,7 @@ Route::resource('/blog', BlogController::class)->name('*', 'blog');
 
 
 Route::get('/tentang-kami', fn() => view('system.maintenance'))->name('tentang-kami');
-Route::get('/jumber', fn() => view('system.maintenance'))->name('jumber');
+Route::get('/jumber', fn() => view('page.jumber.index'))->name('jumber');
 Route::get('/sembako', fn() => view('system.maintenance'))->name('sembako');
 Route::get('/ambulan', fn() => view('system.maintenance'))->name('ambulan');
 Route::get('/khitan', fn() => view('system.maintenance'))->name('khitan');
